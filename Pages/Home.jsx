@@ -1,13 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import Header from '@/components/landing/Header';
-import Hero from '@/components/landing/Hero';
-import StatsSection from '@/components/landing/StatsSection';
-import ServicesSection from '@/components/landing/ServicesSection';
-import AboutSection from '@/components/landing/AboutSection';
-import PricingSection from '@/components/landing/PricingSection';
-import BookingSection from '@/components/landing/BookingSection';
-import Footer from '@/components/landing/Footer';
+import Header from '@/Components/landing/Header';
+import Hero from '@/Components/landing/Hero';
+import StatsSection from '@/Components/landing/StatsSection';
+import ServicesSection from '@/Components/landing/ServicesSection';
+import AboutSection from '@/Components/landing/AboutSection';
+import PricingSection from '@/Components/landing/PricingSection';
+import BookingSection from '@/Components/landing/BookingSection';
+import Footer from '@/Components/landing/Footer';
 
 export default function Home() {
   return (

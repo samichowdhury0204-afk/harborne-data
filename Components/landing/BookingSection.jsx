@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Button } from '@/components/ui/button';
+import { Button } from '@/Components/ui/button';
 import { Calendar, ArrowUpRight, Clock, Video } from 'lucide-react';
 
 export default function BookingSection() {

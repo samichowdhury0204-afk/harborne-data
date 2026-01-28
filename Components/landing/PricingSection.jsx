@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Button } from '@/components/ui/button';
+import { Button } from '@/Components/ui/button';
 import { Check, ArrowRight } from 'lucide-react';
 
 const includedItems = [
