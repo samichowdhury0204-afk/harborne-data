@@ -1,0 +1,83 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Users, MessageSquare, TrendingUp } from 'lucide-react';
+
+const stats = [
+  {
+    icon: Users,
+    value: '9,000+',
+    label: 'Decision-makers reached',
+    sublabel: 'In your first 3 months'
+  },
+  {
+    icon: MessageSquare,
+    value: '30-50',
+    label: 'Interested conversations',
+    sublabel: 'Qualified and forwarded to you'
+  },
+  {
+    icon: TrendingUp,
+    value: '2-4',
+    label: 'Deals closed on average',
+    sublabel: 'From outbound pipeline'
+  }
+];
+
+export default function StatsSection() {
+  return (
+    <section id="results" className="relative py-24 md:py-32">
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0A0A0B] via-[#0d0d0f] to-[#0A0A0B]" />
+      
+      <div className="relative z-10 max-w-6xl mx-auto px-6">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-3xl md:text-4xl font-semibold text-white mb-4">
+            What to Expect in Your First 3 Months
+          </h2>
+        </motion.div>
+
+        <div className="grid md:grid-cols-3 gap-6">
+          {stats.map((stat, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
+              <div className="group relative h-full">
+                {/* Gradient border effect */}
+                <div className="absolute -inset-[1px] bg-gradient-to-b from-white/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                
+                <div className="relative h-full bg-[#111113] rounded-2xl p-8 border border-white/5 hover:border-white/10 transition-colors duration-300">
+                  <div className="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center mb-6">
+                    <stat.icon className="w-6 h-6 text-blue-400" />
+                  </div>
+                  
+                  <div className="text-4xl md:text-5xl font-bold text-white mb-2 tracking-tight">
+                    {stat.value}
+                  </div>
+                  
+                  <div className="text-lg font-medium text-zinc-300 mb-1">
+                    {stat.label}
+                  </div>
+                  
+                  <div className="text-sm text-zinc-500">
+                    {stat.sublabel}
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
+
+      </div>
+    </section>
+  );
+}
