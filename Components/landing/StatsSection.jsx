@@ -17,7 +17,7 @@ const stats = [
   },
   {
     icon: TrendingUp,
-    value: '2-4',
+    value: '2-5',
     label: 'Deals closed on average',
     sublabel: 'From outbound pipeline'
   }
@@ -75,6 +75,19 @@ export default function StatsSection() {
             </motion.div>
           ))}
         </div>
+
+        {/* Disclaimer */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="mt-12 p-6 bg-white/5 rounded-xl border border-white/10"
+        >
+          <p className="text-sm text-zinc-400 text-center">
+            <span className="font-medium text-zinc-300">Note:</span> These results are based on the lower end of expected outcomes and may differ widely based on your particular offer, email copy, and targeting strength. Nevertheless, we strive to be the best at optimizing your campaign.
+          </p>
+        </motion.div>
 
 
       </div>

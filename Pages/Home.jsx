@@ -11,7 +11,7 @@ import Footer from '@/Components/landing/Footer';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#0A0A0B] text-white antialiased">
+    <div className="min-h-screen bg-white text-slate-900 antialiased">
       <Header />
       <Hero />
       <StatsSection />

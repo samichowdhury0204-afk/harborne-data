@@ -38,7 +38,7 @@ export default function Header() {
         transition={{ duration: 0.5 }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled 
-            ? 'bg-[#0A0A0B]/80 backdrop-blur-xl border-b border-white/5' 
+            ? 'bg-white/90 backdrop-blur-xl border-b border-slate-200' 
             : 'bg-transparent'
         }`}
       >
@@ -49,10 +49,11 @@ export default function Header() {
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               className="flex items-center gap-2 hover:opacity-80 transition-opacity"
             >
-              <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center">
-                <span className="text-white font-bold text-sm">HD</span>
-              </div>
-              <span className="text-white font-semibold text-lg">Harborne Data</span>
+              <img 
+                src="/images/Refined logo for Harborne Data in blue and gray.png" 
+                alt="Harborne Data" 
+                className="h-12 w-auto"
+              />
             </button>
 
             {/* Desktop Navigation */}
@@ -61,14 +62,14 @@ export default function Header() {
                 <button
                   key={link.id}
                   onClick={() => scrollToSection(link.id)}
-                  className="text-sm text-zinc-400 hover:text-white transition-colors"
+                  className="text-sm text-slate-600 hover:text-slate-900 font-medium transition-colors"
                 >
                   {link.label}
                 </button>
               ))}
               <Button
                 size="sm"
-                className="bg-blue-600 hover:bg-blue-500 text-white rounded-lg"
+                className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-lg font-medium"
                 onClick={() => scrollToSection('booking')}
               >
                 Book a Call

@@ -86,12 +86,13 @@ export default function PricingSection() {
 
               {/* Timeline summary */}
               <div className="bg-white/[0.02] rounded-xl p-6 mb-8">
+                <p className="text-sm text-zinc-500 text-center mb-6 font-medium">Payment Schedule</p>
                 <div className="grid md:grid-cols-3 gap-6 text-center">
-                  <div>
+                  <div className="border-r border-white/5 pr-4 md:pr-6">
                     <p className="text-2xl font-bold text-white mb-1">£3,000</p>
-                    <p className="text-sm text-zinc-500">Month 1 (setup + management)</p>
+                    <p className="text-sm text-zinc-500">Month 1<br />(setup + management)</p>
                   </div>
-                  <div>
+                  <div className="border-r border-white/5 pr-4 md:pr-6">
                     <p className="text-2xl font-bold text-white mb-1">£2,000</p>
                     <p className="text-sm text-zinc-500">Month 2</p>
                   </div>

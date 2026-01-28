@@ -7,9 +7,9 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background gradient effects */}
-      <div className="absolute inset-0 bg-[#0A0A0B]">
-        <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-blue-500/10 rounded-full blur-[128px]" />
-        <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-indigo-500/8 rounded-full blur-[100px]" />
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-blue-50">
+        <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-blue-500/5 rounded-full blur-[128px]" />
+        <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-slate-500/5 rounded-full blur-[100px]" />
       </div>
       
       {/* Grid pattern overlay */}
@@ -28,11 +28,11 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight leading-[1.1] mb-6"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-6 text-slate-900"
         >
-          <span className="text-white">Cold Email Lead Generation</span>
+          Predictable Outbound Growth
           <br />
-          <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-indigo-500 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-blue-600 via-blue-500 to-teal-500 bg-clip-text text-transparent">
             for MSPs
           </span>
         </motion.h1>
@@ -42,9 +42,9 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-lg md:text-xl text-zinc-400 max-w-3xl mx-auto mb-10 leading-relaxed"
+          className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto mb-12 leading-relaxed"
         >
-          We reach 3,000+ prospects monthly and deliver qualified conversations straight to your inbox—whether you offer network management, security services, IT support, backup and disaster recovery, or cloud infrastructure.
+          We reach 3,000+ prospects monthly via cold email outreach and deliver qualified conversations straight to your inbox—whether you offer network management, security services, IT support, backup and disaster recovery, or cloud infrastructure.
         </motion.p>
 
         {/* CTA buttons */}
@@ -56,7 +56,7 @@ export default function Hero() {
         >
           <Button 
             size="lg"
-            className="bg-blue-600 hover:bg-blue-500 text-white px-8 py-6 text-base font-medium rounded-xl transition-all duration-200 hover:shadow-[0_0_32px_rgba(59,130,246,0.3)]"
+            className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-6 text-base font-semibold rounded-xl transition-all duration-200 hover:shadow-lg hover:shadow-blue-500/20"
             onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Book a 30-Minute Call
@@ -65,7 +65,7 @@ export default function Hero() {
           <Button 
             variant="ghost" 
             size="lg"
-            className="text-zinc-400 hover:text-white hover:bg-white/5 px-8 py-6 text-base font-medium rounded-xl"
+            className="text-slate-600 hover:text-slate-900 hover:bg-slate-100 px-8 py-6 text-base font-medium rounded-xl border border-slate-200"
             onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
           >
             See How It Works

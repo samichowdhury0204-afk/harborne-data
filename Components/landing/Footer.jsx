@@ -1,24 +1,25 @@
 import React from 'react';
-import { Mail, Linkedin, Globe } from 'lucide-react';
+import { Mail, Globe } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="relative py-12 border-t border-white/5">
-      <div className="absolute inset-0 bg-[#0A0A0B]" />
+    <footer className="relative py-12 border-t border-slate-200">
+      <div className="absolute inset-0 bg-gradient-to-b from-white to-slate-50" />
       
       <div className="relative z-10 max-w-6xl mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo/Brand */}
           <div className="flex flex-col items-center md:items-start gap-2">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center">
-                <span className="text-white font-bold text-sm">HD</span>
-              </div>
-              <span className="text-white font-semibold">Harborne Data</span>
+              <img 
+                src="/images/Refined logo for Harborne Data in blue and gray.png" 
+                alt="Harborne Data" 
+                className="h-10 w-auto"
+              />
             </div>
-            <p className="text-sm text-zinc-500">
+            <p className="text-sm text-slate-500">
               Cold email lead generation for MSPs
             </p>
           </div>
@@ -26,26 +27,17 @@ export default function Footer() {
           {/* Links */}
           <div className="flex items-center gap-6">
             <a 
-              href="mailto:hello@harborne-data.com" 
-              className="flex items-center gap-2 text-sm text-zinc-500 hover:text-white transition-colors"
+              href="mailto:sami@harborne-data.com" 
+              className="flex items-center gap-2 text-sm text-slate-600 hover:text-slate-900 transition-colors font-medium"
             >
               <Mail className="w-4 h-4" />
-              <span className="hidden sm:inline">hello@harborne-data.com</span>
-            </a>
-            <a 
-              href="https://linkedin.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-sm text-zinc-500 hover:text-white transition-colors"
-            >
-              <Linkedin className="w-4 h-4" />
-              <span className="hidden sm:inline">LinkedIn</span>
+              <span className="hidden sm:inline">sami@harborne-data.com</span>
             </a>
             <a 
               href="https://harborne-data.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-sm text-zinc-500 hover:text-white transition-colors"
+              className="flex items-center gap-2 text-sm text-slate-600 hover:text-slate-900 transition-colors font-medium"
             >
               <Globe className="w-4 h-4" />
               <span className="hidden sm:inline">harborne-data.com</span>
@@ -54,11 +46,11 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-8 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-zinc-600">
+        <div className="mt-8 pt-8 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-sm text-slate-500">
             © {currentYear} Harborne Data Ltd. All rights reserved.
           </p>
-          <div className="flex items-center gap-6 text-sm text-zinc-600">
+          <div className="flex items-center gap-6 text-sm text-slate-500">
             <span>London, UK</span>
             <span>•</span>
             <span>Registered in England & Wales</span>
