@@ -45,7 +45,7 @@ export default function AboutSection() {
             className="order-1 md:order-2 space-y-4 text-zinc-400 leading-relaxed"
           >
             <p>
-              I'm <span className="text-white font-medium">Sami</span>; I've spent nearly 3 years as a data scientist in the public sector (defence) building automated systems and analysing pipeline data.
+              I'm <span className="text-white font-medium">Sami</span>; I've spent nearly 3 years as a data scientist in the public sector (defence), building automated systems and analysing pipeline data.
             </p>
             <p>
               My background in government analytics and data science means I know how to use data for better decision making - to target ICP's properly, and to choose the right copy.
