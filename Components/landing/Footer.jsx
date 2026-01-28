@@ -14,7 +14,7 @@ export default function Footer() {
           <div className="flex flex-col items-center md:items-start gap-2">
             <div className="flex items-center gap-2">
               <img 
-                src="/images/Refined logo for Harborne Data in blue and gray.png" 
+                src="/images/logo.png" 
                 alt="Harborne Data" 
                 className="h-10 w-auto"
               />

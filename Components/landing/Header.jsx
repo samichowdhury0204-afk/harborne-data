@@ -50,7 +50,7 @@ export default function Header() {
               className="flex items-center gap-2 hover:opacity-80 transition-opacity"
             >
               <img 
-                src="/images/Refined logo for Harborne Data in blue and gray.png" 
+                src="/images/logo.png" 
                 alt="Harborne Data" 
                 className="h-12 w-auto"
               />
