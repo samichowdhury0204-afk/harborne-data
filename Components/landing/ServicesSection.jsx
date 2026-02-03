@@ -56,21 +56,20 @@ const notes = [
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="relative py-24 md:py-32">
-      <div className="absolute inset-0 bg-[#0A0A0B]" />
+    <section id="services" className="relative py-16 md:py-24 lg:py-32 bg-[#0A0A0B] w-full overflow-hidden">
       
-      <div className="relative z-10 max-w-6xl mx-auto px-6">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-16"
+          className="text-center mb-12 md:mb-16 px-2"
         >
-          <h2 className="text-3xl md:text-4xl font-semibold text-white mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white mb-3 sm:mb-4 leading-tight">
             Full-Stack Outbound Lead Generation
           </h2>
-          <p className="text-zinc-400 max-w-2xl mx-auto text-lg">
+          <p className="text-sm sm:text-base md:text-lg text-zinc-400 max-w-2xl mx-auto leading-relaxed">
             We handle every aspect of your outbound engine so you can focus on closing deals.
           </p>
         </motion.div>
@@ -81,11 +80,11 @@ export default function ServicesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="mb-16"
+          className="mb-12 md:mb-16"
         >
-          <h3 className="text-xl font-medium text-white mb-8 text-center">What's Included</h3>
+          <h3 className="text-lg sm:text-xl font-medium text-white mb-6 sm:mb-8 text-center">What's Included</h3>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
             {services.map((service, index) => (
               <motion.div
                 key={index}
@@ -93,15 +92,15 @@ export default function ServicesSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: 0.1 * index }}
-                className="group p-6 rounded-xl bg-[#111113]/50 border border-white/5 hover:border-white/10 hover:bg-[#111113] transition-all duration-300"
+                className="group p-5 sm:p-6 rounded-lg sm:rounded-xl bg-[#111113]/50 border border-white/5 hover:border-white/10 hover:bg-[#111113] transition-all duration-300"
               >
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center shrink-0">
-                    <service.icon className="w-5 h-5 text-blue-400" />
+                <div className="flex items-start gap-3 sm:gap-4">
+                  <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-blue-500/10 flex items-center justify-center shrink-0">
+                    <service.icon className="w-4 h-4 sm:w-5 sm:h-5 text-blue-400" />
                   </div>
                   <div>
-                    <h4 className="font-medium text-white mb-1">{service.title}</h4>
-                    <p className="text-sm text-zinc-500 leading-relaxed">{service.description}</p>
+                    <h4 className="text-sm sm:text-base font-medium text-white mb-1">{service.title}</h4>
+                    <p className="text-xs sm:text-sm text-zinc-500 leading-relaxed">{service.description}</p>
                   </div>
                 </div>
               </motion.div>
@@ -117,13 +116,13 @@ export default function ServicesSection() {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="max-w-3xl mx-auto"
         >
-          <div className="p-6 rounded-xl bg-gradient-to-r from-amber-500/5 to-orange-500/5 border border-amber-500/10">
-            <h4 className="text-sm font-medium text-amber-400 mb-4">Important Notes</h4>
-            <div className="space-y-3">
+          <div className="p-5 sm:p-6 rounded-lg sm:rounded-xl bg-gradient-to-r from-amber-500/5 to-orange-500/5 border border-amber-500/10">
+            <h4 className="text-xs sm:text-sm font-medium text-amber-400 mb-3 sm:mb-4">Important Notes</h4>
+            <div className="space-y-2 sm:space-y-3">
               {notes.map((note, index) => (
-                <div key={index} className="flex items-start gap-3">
-                  <CheckCircle2 className="w-4 h-4 text-amber-500/60 mt-0.5 shrink-0" />
-                  <p className="text-sm text-zinc-400">{note}</p>
+                <div key={index} className="flex items-start gap-2 sm:gap-3">
+                  <CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-500/60 mt-0.5 shrink-0" />
+                  <p className="text-xs sm:text-sm text-zinc-400 leading-relaxed">{note}</p>
                 </div>
               ))}
             </div>

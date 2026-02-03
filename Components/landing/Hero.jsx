@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden w-full">
       {/* Background gradient effects */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-blue-50">
         <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-blue-500/5 rounded-full blur-[128px]" />
@@ -22,7 +22,7 @@ export default function Hero() {
         }}
       />
 
-      <div className="relative z-10 max-w-5xl mx-auto px-6 py-24 text-center">
+      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 py-20 sm:py-24 text-center">
         {/* Main headline */}
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
@@ -52,11 +52,11 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4 px-4 sm:px-0"
         >
           <Button 
             size="lg"
-            className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-6 text-base font-semibold rounded-xl transition-all duration-200 hover:shadow-lg hover:shadow-blue-500/20"
+            className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 sm:px-8 py-5 sm:py-6 text-sm sm:text-base font-semibold rounded-lg sm:rounded-xl transition-all duration-200 hover:shadow-lg hover:shadow-blue-500/20 w-full sm:w-auto"
             onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Book a 30-Minute Call
@@ -65,7 +65,7 @@ export default function Hero() {
           <Button 
             variant="ghost" 
             size="lg"
-            className="text-slate-600 hover:text-slate-900 hover:bg-slate-100 px-8 py-6 text-base font-medium rounded-xl border border-slate-200"
+            className="text-slate-600 hover:text-slate-900 hover:bg-slate-100 px-6 sm:px-8 py-5 sm:py-6 text-sm sm:text-base font-medium rounded-lg sm:rounded-xl border border-slate-200 w-full sm:w-auto"
             onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
           >
             See How It Works

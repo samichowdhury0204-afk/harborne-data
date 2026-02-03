@@ -4,23 +4,22 @@ import { User } from 'lucide-react';
 
 export default function AboutSection() {
   return (
-    <section id="about" className="relative py-24 md:py-32">
-      <div className="absolute inset-0 bg-[#0A0A0B]" />
+    <section id="about" className="relative py-16 md:py-24 lg:py-32 bg-[#0A0A0B] w-full overflow-hidden">
       
-      <div className="relative z-10 max-w-5xl mx-auto px-6">
+      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-16"
+          className="text-center mb-12 md:mb-16 px-2"
         >
-          <h2 className="text-3xl md:text-4xl font-semibold text-white mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white mb-4 leading-tight">
             About Me
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center">
           {/* Image placeholder */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -32,7 +31,7 @@ export default function AboutSection() {
             <img 
               src="/images/me.jpg" 
               alt="Photo" 
-              className="w-48 h-48 rounded-full object-cover border border-white/10"
+              className="w-36 h-36 sm:w-48 sm:h-48 rounded-full object-cover border border-white/10"
             />
           </motion.div>
 
@@ -42,7 +41,7 @@ export default function AboutSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="order-1 md:order-2 space-y-4 text-zinc-400 leading-relaxed"
+            className="order-1 md:order-2 space-y-3 sm:space-y-4 text-sm sm:text-base text-zinc-400 leading-relaxed px-2 sm:px-0"
           >
             <p>
               I'm <span className="text-white font-medium">Sami</span>; I've spent nearly 3 years as a data scientist in the public sector (defence), building automated systems and analysing pipeline data.
