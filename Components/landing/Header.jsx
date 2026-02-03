@@ -33,12 +33,12 @@ export default function Header() {
   return (
     <>
       <motion.header
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.5 }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full ${
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.9, ease: [0.22, 0.61, 0.36, 1] }}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 w-full ${
           isScrolled 
-            ? 'bg-white/90 backdrop-blur-xl border-b border-slate-200' 
+            ? 'bg-ethereal-ivory/95 backdrop-blur-sm border-b border-cinnamon-slate/10' 
             : 'bg-transparent'
         }`}
       >
@@ -62,24 +62,24 @@ export default function Header() {
                 <button
                   key={link.id}
                   onClick={() => scrollToSection(link.id)}
-                  className="text-sm text-slate-600 hover:text-slate-900 font-medium transition-colors"
+                  className="text-sm text-cinnamon-slate hover:text-cinnamon-slate/80 font-medium transition-colors"
                 >
                   {link.label}
                 </button>
               ))}
               <Button
                 size="sm"
-                className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-lg font-medium"
+                className="bg-muted-sage hover:bg-muted-sage/90 text-white rounded-lg font-medium"
                 onClick={() => scrollToSection('booking')}
               >
-                Book a Call
+                Review Your Audit
               </Button>
             </div>
 
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className={`md:hidden p-1 ${isScrolled ? 'text-slate-900' : 'text-slate-600'}`}
+              className={`md:hidden p-1 ${isScrolled ? 'text-cinnamon-slate' : 'text-cinnamon-slate/70'}`}
             >
               {isMobileMenuOpen ? <X className="w-5 h-5 sm:w-6 sm:h-6" /> : <Menu className="w-5 h-5 sm:w-6 sm:h-6" />}
             </button>
@@ -93,24 +93,24 @@ export default function Header() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
-          className="fixed inset-0 z-40 bg-[#0A0A0B] md:hidden pt-16 sm:pt-20"
+          className="fixed inset-0 z-40 bg-cinnamon-slate md:hidden pt-16 sm:pt-20"
         >
           <div className="flex flex-col items-center gap-6 p-6">
             {navLinks.map((link) => (
               <button
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
-                className="text-base sm:text-lg text-zinc-400 hover:text-white transition-colors"
+                className="text-base sm:text-lg text-ethereal-ivory/70 hover:text-ethereal-ivory transition-colors"
               >
                 {link.label}
               </button>
             ))}
             <Button
               size="lg"
-              className="bg-blue-600 hover:bg-blue-500 text-white rounded-lg sm:rounded-xl w-full max-w-xs"
+              className="bg-muted-sage hover:bg-muted-sage/90 text-white rounded-lg sm:rounded-xl w-full max-w-xs"
               onClick={() => scrollToSection('booking')}
             >
-              Book a Call
+              Review Your Audit
             </Button>
           </div>
         </motion.div>
