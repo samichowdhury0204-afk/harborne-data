@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/Components/ui/button';
-import { Menu, X } from 'lucide-react';
 
 const navLinks = [
+  { label: 'Pipeline', id: 'services' },
   { label: 'Results', id: 'results' },
-  { label: 'Services', id: 'services' },
   { label: 'About', id: 'about' },
   { label: 'Pricing', id: 'pricing' }
 ];
@@ -38,7 +37,7 @@ export default function Header() {
         transition={{ duration: 0.5 }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full ${
           isScrolled 
-            ? 'bg-white/90 backdrop-blur-xl border-b border-slate-200' 
+            ? 'bg-[#E4E4DE]/95 backdrop-blur-xl border-b border-[#4A505E]/20' 
             : 'bg-transparent'
         }`}
       >
@@ -62,26 +61,26 @@ export default function Header() {
                 <button
                   key={link.id}
                   onClick={() => scrollToSection(link.id)}
-                  className="text-sm text-slate-600 hover:text-slate-900 font-medium transition-colors"
+                  className="text-sm font-mono text-[#4A505E]/70 hover:text-[#4A505E] font-medium transition-colors tracking-wide"
                 >
                   {link.label}
                 </button>
               ))}
               <Button
                 size="sm"
-                className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-lg font-medium"
+                className="bg-[#94A378] hover:bg-[#94A378]/90 text-white rounded border border-[#94A378] font-sans font-medium"
                 onClick={() => scrollToSection('booking')}
               >
-                Book a Call
+                Request Review
               </Button>
             </div>
 
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className={`md:hidden p-1 ${isScrolled ? 'text-slate-900' : 'text-slate-600'}`}
+              className="md:hidden p-1 text-[#4A505E]/70 hover:text-[#4A505E] transition-colors font-mono text-2xl leading-none"
             >
-              {isMobileMenuOpen ? <X className="w-5 h-5 sm:w-6 sm:h-6" /> : <Menu className="w-5 h-5 sm:w-6 sm:h-6" />}
+              {isMobileMenuOpen ? '×' : '☰'}
             </button>
           </div>
         </nav>
@@ -93,24 +92,24 @@ export default function Header() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
-          className="fixed inset-0 z-40 bg-[#0A0A0B] md:hidden pt-16 sm:pt-20"
+          className="fixed inset-0 z-40 bg-[#E4E4DE] md:hidden pt-16 sm:pt-20"
         >
           <div className="flex flex-col items-center gap-6 p-6">
             {navLinks.map((link) => (
               <button
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
-                className="text-base sm:text-lg text-zinc-400 hover:text-white transition-colors"
+                className="text-base sm:text-lg font-mono text-[#4A505E]/70 hover:text-[#4A505E] transition-colors tracking-wide"
               >
                 {link.label}
               </button>
             ))}
             <Button
               size="lg"
-              className="bg-blue-600 hover:bg-blue-500 text-white rounded-lg sm:rounded-xl w-full max-w-xs"
+              className="bg-[#94A378] hover:bg-[#94A378]/90 text-white rounded border border-[#94A378] font-sans w-full max-w-xs"
               onClick={() => scrollToSection('booking')}
             >
-              Book a Call
+              Request Review
             </Button>
           </div>
         </motion.div>

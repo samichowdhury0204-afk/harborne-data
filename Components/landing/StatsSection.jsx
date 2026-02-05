@@ -1,94 +1,216 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Users, MessageSquare, TrendingUp } from 'lucide-react';
 
-const stats = [
+const metrics = [
   {
-    icon: Users,
     value: '9,000+',
     label: 'Decision-makers reached',
-    sublabel: 'In your first 3 months'
+    context: 'First quarter',
+    description: 'Verified contacts across technical leadership, operations management, and executive roles'
   },
   {
-    icon: MessageSquare,
     value: '30-50',
-    label: 'Interested conversations',
-    sublabel: 'Qualified and forwarded to you'
+    label: 'Qualified conversations',
+    context: 'Per quarter',
+    description: 'Filtered responses expressing genuine interest in services—validated, qualified, and forwarded'
   },
   {
-    icon: TrendingUp,
     value: '2-5',
-    label: 'Deals closed on average',
-    sublabel: 'From outbound pipeline'
+    label: 'Engagements closed',
+    context: 'Typical range',
+    description: 'Based on observed conversion rates from qualified outbound conversations to signed agreements'
   }
 ];
 
 export default function StatsSection() {
   return (
-    <section id="results" className="relative py-16 md:py-24 lg:py-32 bg-gradient-to-b from-[#0A0A0B] via-[#0d0d0f] to-[#0A0A0B] w-full overflow-hidden">
-      
-      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6">
+    <section id="results" className="relative py-24 md:py-32 lg:py-40 bg-[#E4E4DE] w-full overflow-hidden">
+      {/* Subtle grain texture */}
+      <div 
+        className="absolute inset-0 opacity-[0.03] mix-blend-multiply"
+        style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
+          backgroundRepeat: 'repeat',
+          backgroundSize: '200px 200px'
+        }}
+      />
+
+      {/* Technical grid background */}
+      <div 
+        className="absolute inset-0 opacity-[0.015]"
+        style={{
+          backgroundImage: `linear-gradient(rgba(74,80,94,0.3) 1px, transparent 1px),
+                           linear-gradient(90deg, rgba(74,80,94,0.3) 1px, transparent 1px)`,
+          backgroundSize: '32px 32px'
+        }}
+      />
+
+      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6">
+        {/* Editorial Header */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-12 md:mb-16 px-2"
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+          className="mb-20"
         >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white mb-4 leading-tight">
-            What to Expect in Your First 3 Months
-          </h2>
+          <div className="flex items-center gap-3 mb-4">
+            <motion.div 
+              initial={{ width: 0 }}
+              whileInView={{ width: 48 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+              className="h-[1px] bg-[#94A378]" 
+            />
+            <motion.span 
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="text-xs font-mono text-[#94A378] tracking-wider"
+            >
+              EXPECTED OUTCOMES
+            </motion.span>
+          </div>
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.1, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
+            className="text-3xl md:text-4xl lg:text-5xl font-canela font-medium text-[#4A505E] mb-6 leading-tight tracking-tight"
+          >
+            Expected Outcomes
+          </motion.h2>
+          <motion.p 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.2, delay: 0.5 }}
+            className="text-lg font-sans text-[#4A505E]/70 leading-relaxed max-w-3xl"
+          >
+            Measured projections based on observed outbound campaigns for technical companies. 
+            Results vary based on market positioning, offer clarity, and conversion capability.
+          </motion.p>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
-          {stats.map((stat, index) => (
+        {/* Asymmetrical Metric Flow */}
+        <div className="space-y-16">
+          {metrics.map((metric, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ 
+                duration: 1, 
+                delay: index * 0.2,
+                ease: [0.22, 1, 0.36, 1]
+              }}
+              className={`relative ${index % 2 === 1 ? 'md:ml-20' : ''} ${index === 1 ? 'md:mr-12' : ''}`}
             >
-              <div className="group relative h-full">
-                {/* Gradient border effect */}
-                <div className="absolute -inset-[1px] bg-gradient-to-b from-white/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                
-                <div className="relative h-full bg-[#111113] rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-white/5 hover:border-white/10 transition-colors duration-300">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl bg-blue-500/10 flex items-center justify-center mb-4 sm:mb-6">
-                    <stat.icon className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400" />
+              <div className="flex items-start gap-6">
+                {/* Large Metric Display */}
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ 
+                    duration: 0.9, 
+                    delay: 0.2,
+                    ease: [0.34, 1.56, 0.64, 1]
+                  }}
+                  className="shrink-0"
+                >
+                  <div className="text-5xl md:text-6xl lg:text-7xl font-mono font-bold text-[#4A505E] tracking-tighter">
+                    {metric.value}
                   </div>
-                  
-                  <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2 tracking-tight">
-                    {stat.value}
-                  </div>
-                  
-                  <div className="text-base sm:text-lg font-medium text-zinc-300 mb-1">
-                    {stat.label}
-                  </div>
-                  
-                  <div className="text-sm text-zinc-500">
-                    {stat.sublabel}
-                  </div>
+                  <motion.div 
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8, delay: 0.4 }}
+                    className="text-xs font-mono text-[#4A505E]/40 mt-2 tracking-wider"
+                  >
+                    {metric.context}
+                  </motion.div>
+                </motion.div>
+
+                {/* Vertical Divider */}
+                <motion.div 
+                  initial={{ height: 0, opacity: 0 }}
+                  whileInView={{ height: 80, opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
+                  className="w-[1px] bg-gradient-to-b from-[#94A378]/40 to-transparent mt-2" 
+                />
+
+                {/* Content */}
+                <div className="space-y-2 pt-2">
+                  <motion.h3 
+                    initial={{ opacity: 0, x: -10 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+                    className="text-lg md:text-xl font-canela text-[#4A505E] tracking-tight"
+                  >
+                    {metric.label}
+                  </motion.h3>
+                  <motion.p 
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    className="text-sm font-sans text-[#4A505E]/60 leading-relaxed"
+                  >
+                    {metric.description}
+                  </motion.p>
                 </div>
               </div>
+
+              {/* Connector line for flow */}
+              {index < metrics.length - 1 && (
+                <motion.div 
+                  initial={{ height: 0, opacity: 0 }}
+                  whileInView={{ height: 48, opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
+                  className="ml-12 mt-8 w-[1px] bg-gradient-to-b from-[#94A378]/30 to-transparent" 
+                />
+              )}
             </motion.div>
           ))}
         </div>
 
-        {/* Disclaimer */}
+        {/* Disclaimer - Editorial Style */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-          className="mt-8 sm:mt-12 p-4 sm:p-6 bg-white/5 rounded-lg sm:rounded-xl border border-white/10"
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+          className="mt-24 border-l-2 border-[#4A505E]/30 pl-6 md:pl-8"
         >
-          <p className="text-xs sm:text-sm text-zinc-400 text-center leading-relaxed">
-            <span className="font-medium text-zinc-300">Note:</span> These results are based on the lower end of expected outcomes and may differ widely based on your particular offer, email copy, and targeting strength. Nevertheless, we strive to be the best at optimizing your campaign.
-          </p>
+          <motion.div 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="text-xs font-mono text-[#4A505E]/50 mb-3 tracking-wider"
+          >
+            DISCLAIMER
+          </motion.div>
+          <motion.p 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className="text-sm font-sans text-[#4A505E]/60 leading-relaxed max-w-2xl"
+          >
+            These figures represent lower-bound projections and may differ based on your offer positioning, 
+            email copy effectiveness, and ICP targeting accuracy. We refine continuously to improve results, 
+            but outbound success depends on multiple variables—some within our control, others dependent on 
+            your sales process and market fit.
+          </motion.p>
         </motion.div>
-
-
       </div>
     </section>
   );
