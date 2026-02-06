@@ -19,9 +19,9 @@ const serviceBlocks = [
   {
     section: 'Phase III',
     title: 'Campaign Execution & Monitoring',
-    content: `We launch multi-mailbox campaigns sending 3,000+ emails monthly with smart cadencing and deliverability monitoring. Real-time adjustments are made based on engagement rates, bounce rates, and reply sentiment. Your outbound engine is now operational.`,
+    content: `We launch multi-mailbox campaigns sending an agreed upon amount of emails monthly with smart cadencing and deliverability monitoring. Real-time adjustments are made based on engagement rates, bounce rates, and reply sentiment. Your outbound engine is now operational.`,
     duration: 'Week 3+',
-    deliverables: ['3,000+ monthly sends', 'Multi-mailbox rotation', 'Real-time optimisation']
+    deliverables: ['Agreed upon monthly sends', 'Multi-mailbox rotation', 'Real-time optimisation']
   },
   {
     section: 'Phase IV',

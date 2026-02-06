@@ -7,7 +7,7 @@ const includedItems = [
   'Clean, verified list building',
   'Email copy testing (2-3 variants)',
   'Domain setup, mailbox configuration, and automated warm-up',
-  'Campaign delivery (3,000+ emails/month)',
+  'Campaign delivery (agreed upon amount)',
   'n8n qualification workflow (automated lead filtering)',
   'Qualified leads forwarded directly to your sales team',
   'Bi-weekly performance analytics and reporting'

@@ -154,7 +154,7 @@ export default function Hero() {
           transition={{ duration: 1, delay: 1.2, ease: [0.22, 1, 0.36, 1] }}
           className="text-base md:text-lg font-sans text-[#4A505E]/70 max-w-3xl mx-auto mb-12 leading-relaxed text-center"
         >
-          A full-stack outbound engine that reaches 3,000+ decision-makers monthly and delivers 
+          A full-stack outbound engine that reaches an agreed upon amount of decision-makers monthly and delivers 
           qualified conversations to your inbox. Built for MSPs targeting network management, 
           security services, IT support, disaster recovery, and cloud infrastructure.
         </motion.p>

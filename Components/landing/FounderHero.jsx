@@ -93,7 +93,7 @@ export default function FounderHero() {
                 transition={{ duration: 1.2, delay: 1.1 }}
                 className="text-base md:text-lg font-sans text-[#4A505E]/70 leading-relaxed mb-8"
               >
-                I engineer the outbound infrastructure that reaches 9,000+ decision-makers and generates 30-50 qualified conversations per quarter—because technical companies need pipeline systems as reliable as the networks they manage.
+                I engineer the outbound infrastructure that reaches 5,000+ decision-makers and generates 30-50 qualified conversations per quarter—because technical companies need pipeline systems as reliable as the networks they manage.
               </motion.p>
 
               {/* Credibility Points */}
