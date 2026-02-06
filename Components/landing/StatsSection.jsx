@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const metrics = [
   {
-    value: '5,000+',
+    value: '3,000+',
     label: 'Decision-makers reached',
     context: 'First quarter',
     description: 'Verified contacts across technical leadership, operations management, and executive roles'

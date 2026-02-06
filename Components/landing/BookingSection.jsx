@@ -65,7 +65,7 @@ export default function BookingSection() {
             transition={{ duration: 1.1, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
             className="text-3xl md:text-4xl lg:text-5xl font-canela font-medium text-[#4A505E] mb-6 leading-tight tracking-tight"
           >
-            Schedule Your Outbound Audit
+            Book a Call
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0 }}

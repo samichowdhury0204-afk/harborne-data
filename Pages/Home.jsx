@@ -4,9 +4,7 @@ import Header from '@/Components/landing/Header';
 import FounderHero from '@/Components/landing/FounderHero';
 import ProblemSection from '@/Components/landing/ProblemSection';
 import StatsSection from '@/Components/landing/StatsSection';
-import FounderManifestoSection from '@/Components/landing/FounderManifestoSection';
 import ComplianceTrustSection from '@/Components/landing/ComplianceTrustSection';
-import AuditCTASection from '@/Components/landing/AuditCTASection';
 import ServicesSection from '@/Components/landing/ServicesSection';
 import PricingSection from '@/Components/landing/PricingSection';
 import BookingSection from '@/Components/landing/BookingSection';
@@ -26,14 +24,8 @@ export default function Home() {
       {/* 3. Proof + metrics */}
       <StatsSection />
       
-      {/* 4. Founder manifesto */}
-      <FounderManifestoSection />
-      
-      {/* 5. Compliance + trust layer */}
+      {/* 4. Compliance + trust layer */}
       <ComplianceTrustSection />
-      
-      {/* 6. Audit CTA */}
-      <AuditCTASection />
       
       {/* Supporting sections */}
       <ServicesSection />

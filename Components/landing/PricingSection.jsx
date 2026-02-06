@@ -69,7 +69,7 @@ export default function PricingSection() {
             transition={{ duration: 1.1, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
             className="text-3xl md:text-4xl lg:text-5xl font-canela font-medium text-[#E4E4DE] mb-6 leading-tight tracking-tight"
           >
-            Investment Structure
+            Pricing
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0 }}

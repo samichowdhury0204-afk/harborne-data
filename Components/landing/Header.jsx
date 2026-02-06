@@ -71,7 +71,7 @@ export default function Header() {
                 className="bg-[#94A378] hover:bg-[#94A378]/90 text-white rounded border border-[#94A378] font-sans font-medium"
                 onClick={() => scrollToSection('booking')}
               >
-                Request Review
+                Book a Call
               </Button>
             </div>
 
@@ -109,7 +109,7 @@ export default function Header() {
               className="bg-[#94A378] hover:bg-[#94A378]/90 text-white rounded border border-[#94A378] font-sans w-full max-w-xs"
               onClick={() => scrollToSection('booking')}
             >
-              Request Review
+              Book a Call
             </Button>
           </div>
         </motion.div>
