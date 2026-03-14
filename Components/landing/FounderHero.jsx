@@ -105,7 +105,8 @@ export default function FounderHero() {
               >
                 {[
                   'Nearly 3 years: data scientist in UK defence sector',
-                  'Built automated pipeline systems for government analytics'
+                  'Built automated pipeline systems for government analytics; applying a data informed approach to outbound growth',
+                  'Signal-focused outbound via Email and Linkedin'
                 ].map((point, i) => (
                   <motion.div 
                     key={i}

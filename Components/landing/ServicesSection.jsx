@@ -5,7 +5,7 @@ const serviceBlocks = [
   {
     section: 'Phase I',
     title: 'Foundation & Targeting',
-    content: `Before sending a single email, we build the infrastructure. This includes ICP definition—identifying the exact decision-makers who need your services—and list building from verified, premium B2B databases. We configure domains, set up mailboxes, implement SPF/DKIM/DMARC records, and initiate automated warm-up sequences to establish sender reputation.`,
+    content: `Before sending a single email, we build the infrastructure. This includes ICP definition—identifying the exact decision-makers who need your services—and list building from verified, premium B2B databases. We configure domains, set up mailboxes, implement SPF/DKIM/DMARC records, and initiate automated warm-up sequences to establish sender reputation. We also use LinkedIn automations to warm up prospects before outreach.`,
     duration: 'Week 1-2',
     deliverables: ['Configured domains', 'Warmed mailboxes', '1,000+ verified contacts']
   },
