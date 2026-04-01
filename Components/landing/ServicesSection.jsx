@@ -1,34 +1,74 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const serviceBlocks = [
+const serviceOfferings = [
   {
-    section: 'Phase I',
-    title: 'Foundation & Targeting',
-    content: `Before sending a single email, we build the infrastructure. This includes ICP definition—identifying the exact decision-makers who need your services—and list building from verified, premium B2B databases. We configure domains, set up mailboxes, implement SPF/DKIM/DMARC records, and initiate automated warm-up sequences to establish sender reputation. We also use LinkedIn automations to warm up prospects before outreach.`,
-    duration: 'Week 1-2',
-    deliverables: ['Configured domains', 'Warmed mailboxes', '1,000+ verified contacts']
+    title: 'End-to-End Database Builds',
+    subtitle: 'Raw data sources to outreach-ready intelligence',
+    phases: [
+      {
+        section: 'Stage 1',
+        title: 'Multi-Source Data Ingestion & Matching',
+        content: `Ingest contact and institutional data from premium B2B databases, enrollment platforms, and institutional registries. 
+Map and deduplicate records across sources using fuzzy matching and entity resolution. Clean, structure, and normalize data into a unified schema.`,
+        deliverables: ['15+ data sources', 'Deduplicated records', 'Unified data model']
+      },
+      {
+        section: 'Stage 2',
+        title: 'Waterfall Contact Enrichment & Verification',
+        content: `Multi-stage enrichment pipeline: surface verified decision-maker emails, institutional role confirmation, and contact validation. 
+AI-powered role classification to identify the right people within each institution (admissions, partnerships, executive leadership).`,
+        deliverables: ['Verified emails', 'AI role classification', '95%+ accuracy']
+      },
+      {
+        section: 'Stage 3',
+        title: 'Lead Scoring & Classification',
+        content: `AI-powered scoring and segmentation based on institutional fit, capacity, and engagement signals. 
+Custom classification layers: institution type, funding profile, strategic alignment, and partnership readiness.`,
+        deliverables: ['Lead scoring model', 'Segment taxonomy', 'Institutional profiles']
+      },
+      {
+        section: 'Stage 4',
+        title: 'Dashboard & Ongoing Maintenance',
+        content: `Interactive dashboard for filtering, searching, and managing prospects. 
+Monthly retainer includes: change detection, structured reports, email re-verification, and database updates. Keeps your intelligence live.`,
+        deliverables: ['Live dashboard', 'Monthly updates', 'Change alerts']
+      }
+    ]
   },
   {
-    section: 'Phase II',
-    title: 'Copy Development & Testing',
-    content: `We draft 2-3 email variants tailored to your service offering and target persona. Each variant is tested across different segments to determine optimal messaging, subject lines, and CTAs. This is not generic templating—it's hypothesis-driven copywriting backed by conversion data.`,
-    duration: 'Week 2-3',
-    deliverables: ['3 tested variants', 'Optimised sequences', 'Performance baselines']
-  },
-  {
-    section: 'Phase III',
-    title: 'Campaign Execution & Monitoring',
-    content: `We launch multi-mailbox campaigns sending an agreed upon amount of emails monthly with smart cadencing and deliverability monitoring. Real-time adjustments are made based on engagement rates, bounce rates, and reply sentiment. Your outbound engine is now operational.`,
-    duration: 'Week 3+',
-    deliverables: ['Agreed upon monthly sends', 'Multi-mailbox rotation', 'Real-time optimisation']
-  },
-  {
-    section: 'Phase IV',
-    title: 'Lead Qualification & Handoff',
-    content: `Not all replies are created equal. We filter spam, auto-responders, and unqualified leads. Only interested, relevant responses are forwarded to your inbox—conversations that are ready for booking. Your team focuses on closing, not sorting.`,
-    duration: 'Ongoing',
-    deliverables: ['Qualified responses only', 'Direct inbox forwarding', 'Bi-weekly reporting']
+    title: 'Lead Generation Campaigns',
+    subtitle: 'Systematic outreach built on enriched intelligence',
+    phases: [
+      {
+        section: 'Phase I',
+        title: 'Foundation & Targeting',
+        content: `Foundation work: configure domains, set up mailboxes, implement SPF/DKIM/DMARC records for deliverability. LinkedIn automations to warm prospects pre-outreach. 
+Build lists of verified institutional contacts tailored to your student recruitment or partnership goals.`,
+        deliverables: ['Configured domains', 'Warmed accounts', 'Verified contact lists']
+      },
+      {
+        section: 'Phase II',
+        title: 'Copy Development & Testing',
+        content: `Draft 2-3 email variants tailored to your specific offer and target persona within education institutions. 
+Test across different segments to identify optimal messaging, subject lines, and CTAs. Hypothesis-driven copywriting backed by conversion data.`,
+        deliverables: ['3 tested variants', 'Optimised sequences', 'Performance baselines']
+      },
+      {
+        section: 'Phase III',
+        title: 'Campaign Execution & Monitoring',
+        content: `Launch multi-mailbox campaigns with smart cadencing and real-time deliverability monitoring. 
+Agreed monthly send volume with continuous optimisation based on engagement rates, bounce rates, and reply sentiment.`,
+        deliverables: ['Monthly campaigns', 'Multi-mailbox rotation', 'Real-time optimization']
+      },
+      {
+        section: 'Phase IV',
+        title: 'Lead Qualification & Handoff',
+        content: `Intelligent filtering removes spam, auto-responders, and unqualified responses. Only genuine, interested replies forwarded to your team—ready for conversation. 
+Your team focuses on relationship building, not sorting through noise.`,
+        deliverables: ['Qualified responses', 'Direct inbox forwarding', 'Bi-weekly reporting']
+      }
+    ]
   }
 ];
 
@@ -79,7 +119,7 @@ export default function ServicesSection() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-xs font-mono text-[#94A378] tracking-wider"
             >
-              EXECUTION METHODOLOGY
+              WHAT WE BUILD
             </motion.span>
           </div>
           <motion.h2 
@@ -89,7 +129,7 @@ export default function ServicesSection() {
             transition={{ duration: 1.1, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
             className="text-3xl md:text-4xl lg:text-5xl font-canela font-medium text-[#E4E4DE] mb-6 leading-tight tracking-tight"
           >
-            Execution Methodology
+            Two Services for Education Intelligence
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0 }}
@@ -98,170 +138,160 @@ export default function ServicesSection() {
             transition={{ duration: 1.2, delay: 0.5 }}
             className="text-lg font-sans text-[#E4E4DE]/70 leading-relaxed max-w-3xl"
           >
-            A structured approach to building repeatable, systematic outbound infrastructure. 
-            No shortcuts. No abstractions. Engineering discipline applied to pipeline development.
+            Standalone database builds for ongoing intelligence platforms. Or database builds paired with lead generation campaigns. 
+            Both designed to take you from raw data sources to outreach-ready systems.
           </motion.p>
         </motion.div>
 
-        {/* Vertical Editorial Flow - Staggered */}
-        <div className="space-y-20">
-          {serviceBlocks.map((block, index) => (
-            <motion.article
-              key={index}
-              initial={{ opacity: 0, y: 40 }}
+        {/* Services */}
+        <div className="space-y-32">
+          {serviceOfferings.map((service, serviceIndex) => (
+            <motion.div
+              key={serviceIndex}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-80px" }}
-              transition={{ 
-                duration: 1, 
-                delay: index * 0.15,
-                ease: [0.22, 1, 0.36, 1]
-              }}
-              className={`relative ${index % 2 === 1 ? 'md:ml-16' : ''}`}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 1, delay: serviceIndex * 0.2, ease: [0.22, 1, 0.36, 1] }}
+              className="space-y-0"
             >
-              {/* Section Marker */}
-              <div className="flex items-center gap-4 mb-6">
-                <motion.span 
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-                  className="text-sm font-mono text-[#94A378] border border-[#94A378]/30 px-3 py-1 rounded bg-[#94A378]/5"
-                >
-                  {block.section}
-                </motion.span>
-                <motion.div 
-                  initial={{ width: 0 }}
-                  whileInView={{ width: '100%' }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-                  className="h-[1px] flex-1 bg-gradient-to-r from-[#E4E4DE]/10 to-transparent" 
-                />
-                <motion.span 
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: 0.4 }}
-                  className="text-xs font-mono text-[#E4E4DE]/50"
-                >
-                  {block.duration}
-                </motion.span>
-              </div>
-
-              {/* Content Block */}
-              <div className="border-l-2 border-[#94A378]/30 pl-6 md:pl-8 space-y-4">
+              {/* Service Header */}
+              <div className="mb-12 pb-8 border-b border-[#E4E4DE]/10">
                 <motion.h3 
-                  initial={{ opacity: 0, x: -10 }}
-                  whileInView={{ opacity: 1, x: 0 }}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
-                  className="text-2xl md:text-3xl font-canela font-medium text-[#E4E4DE] tracking-tight"
+                  transition={{ duration: 1, delay: serviceIndex * 0.2 + 0.1 }}
+                  className="text-2xl md:text-3xl font-canela font-medium text-[#E4E4DE] mb-2"
                 >
-                  {block.title}
+                  {service.title}
                 </motion.h3>
-                
                 <motion.p 
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 1, delay: 0.6 }}
-                  className="text-sm md:text-base font-sans text-[#E4E4DE]/60 leading-relaxed"
+                  transition={{ duration: 1, delay: serviceIndex * 0.2 + 0.2 }}
+                  className="text-base font-sans text-[#E4E4DE]/60"
                 >
-                  {block.content}
+                  {service.subtitle}
                 </motion.p>
+              </div>
 
-                {/* Deliverables */}
-                <div className="pt-4">
-                  <motion.div 
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6, delay: 0.7 }}
-                    className="text-xs font-mono text-[#E4E4DE]/50 mb-3 tracking-wider"
+              {/* Vertical Editorial Flow - Staggered */}
+              <div className="space-y-20">
+                {service.phases.map((phase, index) => (
+                  <motion.article
+                    key={index}
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-80px" }}
+                    transition={{ 
+                      duration: 1, 
+                      delay: serviceIndex * 0.2 + index * 0.15,
+                      ease: [0.22, 1, 0.36, 1]
+                    }}
+                    className={`relative ${index % 2 === 1 ? 'md:ml-16' : ''}`}
                   >
-                    DELIVERABLES
-                  </motion.div>
-                  <div className="flex flex-wrap gap-2">
-                    {block.deliverables.map((item, i) => (
+                    {/* Section Marker */}
+                    <div className="flex items-center gap-4 mb-6">
                       <motion.span 
-                        key={i}
                         initial={{ opacity: 0, scale: 0.8 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
-                        transition={{ 
-                          duration: 0.5, 
-                          delay: 0.8 + (i * 0.1),
-                          ease: "easeOut"
-                        }}
-                        className="text-xs font-mono px-3 py-1.5 bg-[#E4E4DE]/5 border border-[#E4E4DE]/10 rounded text-[#E4E4DE]/50"
+                        transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+                        className="text-sm font-mono text-[#94A378] border border-[#94A378]/30 px-3 py-1 rounded bg-[#94A378]/5"
                       >
-                        {item}
+                        {phase.section}
                       </motion.span>
-                    ))}
-                  </div>
-                </div>
-              </div>
+                      <motion.div 
+                        initial={{ width: 0 }}
+                        whileInView={{ width: '100%' }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
+                        className="h-[1px] flex-1 bg-gradient-to-r from-[#E4E4DE]/10 to-transparent" 
+                      />
+                    </div>
 
-              {/* Flow connector */}
-              {index < serviceBlocks.length - 1 && (
-                <div className="flex items-center gap-2 mt-12 ml-6 md:ml-8 text-[#E4E4DE]/50">
-                  <motion.div 
-                    initial={{ height: 0, opacity: 0 }}
-                    whileInView={{ height: 32, opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6, delay: 0.9, ease: "easeOut" }}
-                    className="w-[1px] bg-gradient-to-b from-[#94A378]/30 to-transparent" 
-                  />
-                  <motion.div
-                    initial={{ opacity: 0, y: -10 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 1 }}
-                    className="text-[#94A378]/30 font-mono text-xl leading-none"
-                  >
-                    ↓
-                  </motion.div>
-                </div>
-              )}
-            </motion.article>
+                    {/* Content Block */}
+                    <div className="border-l-2 border-[#94A378]/30 pl-6 md:pl-8 space-y-4">
+                      <motion.h3 
+                        initial={{ opacity: 0, x: -10 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
+                        className="text-2xl md:text-3xl font-canela font-medium text-[#E4E4DE] tracking-tight"
+                      >
+                        {phase.title}
+                      </motion.h3>
+                      
+                      <motion.p 
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1, delay: 0.6 }}
+                        className="text-sm md:text-base font-sans text-[#E4E4DE]/60 leading-relaxed"
+                      >
+                        {phase.content}
+                      </motion.p>
+
+                      {/* Deliverables */}
+                      <div className="pt-4">
+                        <motion.div 
+                          initial={{ opacity: 0 }}
+                          whileInView={{ opacity: 1 }}
+                          viewport={{ once: true }}
+                          transition={{ duration: 0.6, delay: 0.7 }}
+                          className="text-xs font-mono text-[#E4E4DE]/50 mb-3 tracking-wider"
+                        >
+                          DELIVERABLES
+                        </motion.div>
+                        <div className="flex flex-wrap gap-2">
+                          {phase.deliverables.map((item, i) => (
+                            <motion.span 
+                              key={i}
+                              initial={{ opacity: 0, scale: 0.8 }}
+                              whileInView={{ opacity: 1, scale: 1 }}
+                              viewport={{ once: true }}
+                              transition={{ 
+                                duration: 0.5, 
+                                delay: 0.8 + (i * 0.1),
+                                ease: "easeOut"
+                              }}
+                              className="text-xs font-mono px-3 py-1.5 bg-[#E4E4DE]/5 border border-[#E4E4DE]/10 rounded text-[#E4E4DE]/50"
+                            >
+                              {item}
+                            </motion.span>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Flow connector */}
+                    {index < service.phases.length - 1 && (
+                      <div className="flex items-center gap-2 mt-12 ml-6 md:ml-8 text-[#E4E4DE]/50">
+                        <motion.div 
+                          initial={{ height: 0, opacity: 0 }}
+                          whileInView={{ height: 32, opacity: 1 }}
+                          viewport={{ once: true }}
+                          transition={{ duration: 0.6, delay: 0.9, ease: "easeOut" }}
+                          className="w-[1px] bg-gradient-to-b from-[#94A378]/30 to-transparent" 
+                        />
+                        <motion.div
+                          initial={{ opacity: 0, y: -10 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          viewport={{ once: true }}
+                          transition={{ duration: 0.5, delay: 1 }}
+                          className="text-[#94A378]/30 font-mono text-xl leading-none"
+                        >
+                          ↓
+                        </motion.div>
+                      </div>
+                    )}
+                  </motion.article>
+                ))}
+              </div>
+            </motion.div>
           ))}
         </div>
-
-        {/* Closing Note */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-          className="mt-24 p-8 border-l-2 border-[#94A378]/30 bg-[#94A378]/5"
-        >
-          <motion.div 
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-xs font-mono text-[#94A378] mb-3 tracking-wider"
-          >
-            NOTE
-          </motion.div>
-          <motion.p 
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.9, delay: 0.5 }}
-            className="text-sm font-sans text-[#E4E4DE]/60 leading-relaxed mb-3"
-          >
-            Month 1 is a testing and optimisation period. We refine messaging, validate targeting, and establish baseline performance metrics.
-          </motion.p>
-          <motion.p 
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.9, delay: 0.6 }}
-            className="text-sm font-sans text-[#E4E4DE]/60 leading-relaxed"
-          >
-            We forward qualified conversations to you—your team handles meeting booking and closing. We handle everything upstream.
-          </motion.p>
-        </motion.div>
       </div>
     </section>
   );

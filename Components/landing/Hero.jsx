@@ -54,7 +54,7 @@ export default function Hero() {
             className="flex items-center gap-2 px-3 py-1.5 border border-[#4A505E]/30 bg-[#4A505E]/5 rounded"
           >
             <Terminal className="w-3.5 h-3.5 text-[#4A505E]" />
-            <span className="text-xs font-mono text-[#4A505E] tracking-wider">B2B OUTBOUND v2.0</span>
+            <span className="text-xs font-mono text-[#4A505E] tracking-wider">EDUCATION DATA PLATFORM</span>
           </motion.div>
         </motion.div>
 
@@ -72,7 +72,7 @@ export default function Hero() {
               transition={{ duration: 0.9, delay: 0.6, ease: "easeOut" }}
               className="inline-block"
             >
-              Outbound Infrastructure
+              Data Pipelines & Intelligence
             </motion.span>
             <br />
             <motion.span 
@@ -81,7 +81,7 @@ export default function Hero() {
               transition={{ duration: 0.9, delay: 0.75, ease: "easeOut" }}
               className="text-[#94A378] inline-block"
             >
-              for MSPs
+              for Education
             </motion.span>
           </h1>
           
@@ -154,15 +154,9 @@ export default function Hero() {
           transition={{ duration: 1, delay: 1.2, ease: [0.22, 1, 0.36, 1] }}
           className="text-base md:text-lg font-sans text-[#4A505E]/70 max-w-3xl mx-auto mb-12 leading-relaxed text-center"
         >
-          A full-stack outbound engine that reaches an agreed upon amount of decision-makers monthly and delivers 
-          qualified conversations to your inbox. Built for MSPs targeting network management, 
-          security services, IT support, disaster recovery, and cloud infrastructure.
-        </motion.p>
-
-        {/* CTA Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+            End-to-end data pipelines and outbound intelligence platforms. Raw data sources to enriched, 
+            actionable databases with dashboards and ongoing maintenance. Used by education institutions 
+            for student recruitment, partnership development, and strategic outreach.
           transition={{ duration: 0.9, delay: 1.5, ease: [0.22, 1, 0.36, 1] }}
           className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4 px-4 sm:px-0"
         >

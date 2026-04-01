@@ -74,7 +74,7 @@ export default function FounderHero() {
                   transition={{ duration: 1.1, delay: 0.7, ease: "easeOut" }}
                   className="inline-block"
                 >
-                  Outbound Infrastructure
+                  Data Pipelines
                 </motion.span>
                 <br />
                 <motion.span 
@@ -83,7 +83,7 @@ export default function FounderHero() {
                   transition={{ duration: 1.1, delay: 0.85, ease: "easeOut" }}
                   className="text-[#94A378] inline-block"
                 >
-                  for Technical Firms
+                  for Education
                 </motion.span>
               </h1>
               
@@ -93,7 +93,7 @@ export default function FounderHero() {
                 transition={{ duration: 1.2, delay: 1.1 }}
                 className="text-base md:text-lg font-sans text-[#4A505E]/70 leading-relaxed mb-8"
               >
-                I engineer the outbound infrastructure that reaches 3,000+ decision-makers and generates 30-50 qualified conversations per quarter.
+                I build end-to-end data intelligence platforms: from raw source data to enriched, verified, outreach-ready databases with dashboards and ongoing maintenance. Used by education institutions for student recruitment and partnership development.
               </motion.p>
 
               {/* Credibility Points */}
@@ -105,8 +105,8 @@ export default function FounderHero() {
               >
                 {[
                   'Nearly 3 years: data scientist in UK defence sector',
-                  'Built automated pipeline systems for government analytics; applying a data informed approach to outbound growth',
-                  'Signal-focused outbound via Email and Linkedin'
+                  'Built automated pipeline systems for government analytics and decision intelligence',
+                  'Multi-source data engineering, enrichment, and verification at scale'
                 ].map((point, i) => (
                   <motion.div 
                     key={i}
@@ -131,9 +131,9 @@ export default function FounderHero() {
                 <Button 
                   size="lg"
                   className="bg-[#94A378] hover:bg-[#94A378]/90 text-white px-8 py-6 text-base font-sans font-medium rounded-lg transition-all duration-300"
-                  onClick={() => document.getElementById('audit-cta')?.scrollIntoView({ behavior: 'smooth' })}
+                  onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}
                 >
-                  Request Your Outbound Audit
+                  Book a Call
                 </Button>
               </motion.div>
             </motion.div>

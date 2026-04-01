@@ -42,30 +42,30 @@ const pipelineStages = [
   {
     id: '01',
     title: 'DATA SOURCING',
-    description: 'Multi-source aggregation from premium B2B databases, verified contact enrichment, real-time validation protocols',
+    description: 'Multi-source aggregation from premium B2B databases, institutional records, and enrollment platforms. Verified contact compilation and real-time validation.',
     iconType: 'database',
     metrics: ['15+ data sources', '95%+ accuracy', 'Daily refresh cycles']
   },
   {
     id: '02',
-    title: 'LEAD ENRICHMENT',
-    description: 'Technographic analysis, intent signal processing, ICP scoring algorithms, decision-maker identification',
+    title: 'CONTACT ENRICHMENT',
+    description: 'Waterfall enrichment pipeline: surface verified emails, institutional role confirmation, and contact validation. Continuous verification protocols.',
     iconType: 'search',
-    metrics: ['30+ data points', 'ML-powered scoring', 'Role verification']
+    metrics: ['30+ data points', 'Email verification', 'Role confirmation']
   },
   {
     id: '03',
-    title: 'DELIVERABILITY ENGINEERING',
-    description: 'SPF/DKIM/DMARC configuration, domain warming protocols, sender reputation management, inbox placement optimisation',
+    title: 'AI CLASSIFICATION',
+    description: 'AI-powered scoring and segmentation. Institution type, strategic alignment, decision-maker classification, and engagement readiness assessment.',
     iconType: 'shield',
-    metrics: ['99%+ inbox rate', '10+ warm domains', 'Real-time monitoring']
+    metrics: ['ML-powered scoring', 'Segment taxonomy', 'Custom models']
   },
   {
     id: '04',
-    title: 'EMAIL SEQUENCING',
-    description: 'Multi-variant testing, cadence optimisation, reply classification, automated follow-up logic, conversion tracking',
+    title: 'LIVE DASHBOARD & ACCESS',
+    description: 'Interactive dashboard for prospect management, search, and filtering. API access for integrations. Ongoing maintenance and monthly updates included.',
     iconType: 'lightning',
-    metrics: ['A/B/C testing', '7-touch sequences', 'Smart cadencing']
+    metrics: ['Dashboard access', 'API integration', 'Monthly updates']
   }
 ];
 
@@ -116,7 +116,7 @@ export default function TechnicalPipelineSection() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-xs font-mono text-[#94A378] tracking-wider"
             >
-              SYSTEM ARCHITECTURE
+              DATA ARCHITECTURE
             </motion.span>
           </div>
           <motion.h2 
@@ -126,7 +126,7 @@ export default function TechnicalPipelineSection() {
             transition={{ duration: 1.1, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
             className="text-3xl md:text-4xl lg:text-5xl font-canela font-medium text-[#E4E4DE] mb-6 leading-tight tracking-tight"
           >
-            Outbound Architecture
+            Data Pipeline Architecture
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0 }}
@@ -135,8 +135,8 @@ export default function TechnicalPipelineSection() {
             transition={{ duration: 1.2, delay: 0.5 }}
             className="text-lg font-sans text-[#E4E4DE]/70 leading-relaxed max-w-3xl"
           >
-            A four-stage infrastructure designed for predictable, systematic B2B outreach. 
-            Each component is engineered for reliability, deliverability, and qualified response generation.
+            A four-stage infrastructure designed for reliable, comprehensive intelligence systems. 
+            The foundation of both database builds and lead generation campaigns.
           </motion.p>
         </motion.div>
 

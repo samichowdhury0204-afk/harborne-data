@@ -4,8 +4,8 @@ import { Button } from '@/Components/ui/button';
 
 const pricingFactors = [
   {
-    label: 'Lead Volume',
-    description: 'The number of qualified leads and outbound touches required each month directly impacts infrastructure scope and operational effort.',
+    label: 'Data Scope',
+    description: 'The size of your prospect database and number of data sources to integrate directly impacts infrastructure scale and enrichment depth.',
     icon: (
       <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
@@ -13,8 +13,8 @@ const pricingFactors = [
     ),
   },
   {
-    label: 'Technical Complexity',
-    description: 'Niche-specific compliance requirements, multi-step qualification logic, and advanced targeting all increase the engineering involved.',
+    label: 'Classification Complexity',
+    description: 'Multi-layer enrichment, AI-powered segmentation, and custom decision-maker classification require additional engineering investment.',
     icon: (
       <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M11.42 15.17l-5.1-3.58a1.5 1.5 0 010-2.45l5.1-3.58a1.5 1.5 0 012.08.4l.94 1.35a1.5 1.5 0 01-.4 2.08L10.98 12l3.06 2.61a1.5 1.5 0 01.4 2.08l-.94 1.35a1.5 1.5 0 01-2.08.4zM17 8l-1 8" />
@@ -22,8 +22,8 @@ const pricingFactors = [
     ),
   },
   {
-    label: 'Integration Depth',
-    description: 'CRM syncing, webhook automations, Slack alerts, and custom n8n workflows add layers of integration that scale the retainer accordingly.',
+    label: 'Dashboard & Integration',
+    description: 'Custom dashboard features, API access, CRM syncing, and ongoing data maintenance retainers layer complexity into scoping.',
     icon: (
       <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
@@ -33,13 +33,14 @@ const pricingFactors = [
 ];
 
 const includedItems = [
-  'ICP definition and targeting strategy',
-  'Clean, verified list building',
-  'Email copy testing (2-3 variants)',
-  'Domain setup, mailbox configuration, and automated warm-up',
-  'Campaign delivery (agreed upon volume)',
-  'Qualified leads forwarded directly to your sales team',
-  'Bi-weekly performance analytics and reporting',
+  'Multi-source data ingestion and deduplication',
+  'AI-powered contact enrichment and verification',
+  'Custom classification and lead scoring',
+  'Interactive dashboard or API access',
+  'Monthly maintenance and data updates',
+  'Change detection and email re-verification',
+  'Structured monthly reporting',
+  'Optional: lead generation campaigns built on your database',
 ];
 
 export default function PricingSection() {
@@ -99,7 +100,7 @@ export default function PricingSection() {
             transition={{ duration: 1.1, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
             className="text-3xl md:text-4xl lg:text-5xl font-canela font-medium text-[#E4E4DE] mb-6 leading-tight tracking-tight"
           >
-            Flexible Infrastructure
+            Custom Engagement Pricing
           </motion.h2>
           <motion.p
             initial={{ opacity: 0 }}
@@ -108,7 +109,7 @@ export default function PricingSection() {
             transition={{ duration: 1.2, delay: 0.5 }}
             className="text-lg font-sans text-[#E4E4DE]/70 leading-relaxed max-w-3xl"
           >
-            Every engagement is scoped to your business. Pricing depends on the complexity of your requirements but is guaranteed to deliver a high ROI for you.
+            Every engagement is scoped to your requirements. Whether you need a standalone database build, lead generation campaigns, or both, pricing is tailored to complexity and scale.
           </motion.p>
         </motion.div>
 

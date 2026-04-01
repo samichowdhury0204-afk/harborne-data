@@ -3,16 +3,16 @@ import { motion } from 'framer-motion';
 
 const painPoints = [
   {
-    problem: 'Outbound requires specialised infrastructure',
-    reality: 'Engineering reliable systems is your expertise. Cold outreach requires deliverability optimisation, data engineering, and sequencing logic—a distinct technical discipline.'
+    problem: 'Student recruitment requires verified, structured data',
+    reality: 'Lists cobbled together from generic sources and outdated directories don\'t convert. You need enriched contact data—verified emails, decision-maker role verification, institutional targeting—piped into a live system that keeps contact information current.'
   },
   {
-    problem: 'Pipeline gaps compound over time',
-    reality: 'Without systematic outbound infrastructure, qualified conversations don\'t materialise—regardless of your service quality or technical capability.'
+    problem: 'Maintaining data freshness is engineering work',
+    reality: 'A single outreach database quickly becomes stale. Email invalidity compounds monthly; institutional restructures leave your targeting misaligned. Keeping intelligence systems live requires ongoing change detection, re-verification, and strategic updates.'
   },
   {
-    problem: 'Ad-hoc campaigns yield inconsistent results',
-    reality: 'Sending emails is straightforward. Building a system that reliably reaches inboxes, generates meaningful responses, and qualifies interest is engineering work.'
+    problem: 'Multi-source data engineering is beyond typical tools',
+    reality: 'Spreadsheets and standard platforms can\'t handle waterfall enrichment, cross-source matching, or AI-powered classification. Building reliable systems that turn raw data into outreach-ready intelligence needs infrastructure—not bureaucracy.'
   }
 ];
 
@@ -73,8 +73,8 @@ export default function ProblemSection() {
             transition={{ duration: 1.1, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
             className="text-3xl md:text-4xl lg:text-5xl font-canela font-medium text-[#E4E4DE] mb-6 leading-tight tracking-tight"
           >
-            Technical Companies Don't Lack Expertise—
-            <br />They Lack Outbound Infrastructure
+            Education Institutions Need Data Systems,
+            <br />Not Generic Databases
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0 }}
@@ -83,7 +83,9 @@ export default function ProblemSection() {
             transition={{ duration: 1.2, delay: 0.5 }}
             className="text-lg font-sans text-[#E4E4DE]/70 leading-relaxed max-w-3xl"
           >
-            You engineer complex systems with precision. But structured outbound is a separate discipline—and building it in-house diverts resources from your core competencies.
+            Student recruitment and partnership development depend on clean, enriched, live intelligence. 
+            But building that system—ingesting multi-source data, enriching contact records, maintaining verification—is engineering work 
+            that distracts from your actual mission.
           </motion.p>
         </motion.div>
 

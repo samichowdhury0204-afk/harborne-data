@@ -3,22 +3,22 @@ import { motion } from 'framer-motion';
 
 const metrics = [
   {
-    value: '3,000+',
-    label: 'Decision-makers reached',
-    context: 'First quarter',
-    description: 'Verified contacts across technical leadership, operations management, and executive roles'
+    value: '10,000+',
+    label: 'Verified contacts',
+    context: 'Per build',
+    description: 'Multi-source institution data enriched with verified emails, role confirmation, and decision-maker identification'
   },
   {
-    value: '30-50',
-    label: 'Qualified conversations',
-    context: 'Per quarter',
-    description: 'Filtered responses expressing genuine interest in services—validated, qualified, and forwarded'
+    value: '95%+',
+    label: 'Email accuracy',
+    context: 'Verified',
+    description: 'Continuous validation protocols ensure contact information remains current and valid for outreach'
   },
   {
-    value: '2-5',
-    label: 'Engagements closed',
-    context: 'Typical range',
-    description: 'Based on observed conversion rates from qualified outbound conversations to signed agreements'
+    value: '4-8x',
+    label: 'ROI improvement',
+    context: 'Typical',
+    description: 'Institutions see measurable gains in recruitment outcomes and partnership conversion from clean, enriched intelligence systems'
   }
 ];
 
@@ -88,8 +88,8 @@ export default function StatsSection() {
             transition={{ duration: 1.2, delay: 0.5 }}
             className="text-lg font-sans text-[#4A505E]/70 leading-relaxed max-w-3xl"
           >
-            Measured projections based on observed outbound campaigns for technical companies. 
-            Results vary based on market positioning, offer clarity, and conversion capability.
+            Data quality benchmarks across database builds. Results are grounded in verified contact information, 
+            continuous maintenance protocols, and measurable institutional outcomes.
           </motion.p>
         </motion.div>
 

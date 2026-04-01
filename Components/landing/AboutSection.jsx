@@ -6,12 +6,12 @@ const timeline = [
   {
     period: '2021-2024',
     role: 'Data Scientist, UK Defence Sector',
-    focus: 'Automated systems engineering, pipeline analytics, decision intelligence'
+    focus: 'Automated systems engineering, pipeline analytics, decision intelligence and data platform design'
   },
   {
     period: '2024',
     role: 'Founded Harborne Data',
-    focus: 'Applied data engineering principles to B2B outbound infrastructure'
+    focus: 'Dedicated to building data pipelines and intelligence platforms for education institutions'
   }
 ];
 
@@ -72,7 +72,7 @@ export default function AboutSection() {
             transition={{ duration: 0.9, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
             className="text-3xl md:text-4xl lg:text-5xl font-canela font-medium text-[#4A505E] mb-6 leading-tight tracking-tight"
           >
-            Built By Engineers, For Engineers
+            Data Infrastructure for Education
           </motion.h2>
         </motion.div>
 
@@ -119,9 +119,9 @@ export default function AboutSection() {
                 transition={{ duration: 0.9, delay: 0.4 }}
                 className="text-sm md:text-base font-sans text-[#4A505E]/70 leading-relaxed"
               >
-                Nearly 3 years as a data scientist in the UK defence sector, building automated systems 
-                and analyzing pipeline data. Background in government analytics means understanding how 
-                to use data for decision-making—ICP targeting, copy selection, deliverability optimisation.
+                Nearly 3 years building automated systems and data pipelines in the UK defence sector. 
+                That work meant turning raw data into actionable intelligence—ingestion, enrichment, classification, 
+                verification, and maintenance of live systems. It's the same work education institutions need for recruitment and partnerships.
               </motion.p>
 
               <motion.p 
@@ -131,8 +131,9 @@ export default function AboutSection() {
                 transition={{ duration: 0.9, delay: 0.5 }}
                 className="text-sm md:text-base font-sans text-[#4A505E]/70 leading-relaxed"
               >
-                I built Harborne Data because MSPs are technical experts who shouldn't waste time wrestling 
-                with outbound infrastructure. You need a system that works as reliably as the networks you manage.
+                I founded Harborne Data because education institutions shouldn't build data infrastructure themselves. 
+                Building, maintaining, and scaling enriched intelligence platforms isn't your core competency—student recruitment is. 
+                You need reliable data systems so your team can focus on what matters: enrollment and partnerships.
               </motion.p>
 
               <motion.p 
@@ -142,8 +143,8 @@ export default function AboutSection() {
                 transition={{ duration: 0.9, delay: 0.6 }}
                 className="text-sm md:text-base font-sans text-[#4A505E]/70 leading-relaxed"
               >
-                This is founder-led engineering. I apply the same rigor to your sales pipeline that you 
-                apply to client IT systems: automation, optimisation, predictability.
+                This is founder-led. I apply the same engineering discipline to your intelligence systems that I applied to defence analytics: 
+                automation, optimization, and unflinching attention to data quality.
               </motion.p>
             </div>
           </motion.div>
@@ -280,8 +281,8 @@ export default function AboutSection() {
               transition={{ duration: 0.9, delay: 0.5 }}
               className="text-base md:text-lg font-sans text-[#4A505E] leading-relaxed"
             >
-              Handle the technical complexity—deliverability, data, infrastructure—so you focus on 
-              what you do best: closing deals and serving clients.
+              Handle the data engineering complexity—sourcing, matching, enrichment, verification, maintenance—so you focus on 
+              what you do best: student recruitment and building partnerships.
             </motion.p>
           </motion.div>
 
@@ -297,12 +298,12 @@ export default function AboutSection() {
               <div className="flex-1">
                 <div className="text-xs font-mono text-[#94A378] mb-3 tracking-wider">NEXT STEP</div>
                 <h3 className="text-2xl md:text-3xl font-canela font-medium text-[#4A505E] mb-3">
-                  Review Your Outbound Audit
+                  Discuss Your Data Needs
                 </h3>
                 <p className="text-sm md:text-base font-sans text-[#4A505E]/70 leading-relaxed max-w-2xl">
-                  Start with analysis, not commitment. We'll evaluate your current outbound infrastructure—
-                  deliverability posture, targeting accuracy, and technical gaps—then provide a detailed 
-                  assessment of where improvements drive measurable pipeline growth.
+                  Start with a conversation about your student recruitment challenges and partnership goals. 
+                  We'll assess what data infrastructure you need—database builds, outreach campaigns, or both—and 
+                  outline a path to live, enriched intelligence systems.
                 </p>
               </div>
               <Button
@@ -310,7 +311,7 @@ export default function AboutSection() {
                 className="bg-[#4A505E] hover:bg-[#4A505E]/90 text-[#E4E4DE] px-8 py-6 text-base font-sans font-medium rounded-lg transition-all duration-200 shrink-0"
                 onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                Request Audit
+                Book a Call
               </Button>
             </div>
           </motion.div>
