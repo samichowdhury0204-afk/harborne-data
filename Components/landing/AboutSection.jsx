@@ -5,7 +5,7 @@ import { Button } from '@/Components/ui/button';
 const timeline = [
   {
     period: '2021-2024',
-    role: 'Data Scientist, UK Defence Sector',
+    role: 'Principal, Harborne Data Ltd',
     focus: 'Automated systems engineering, pipeline analytics, decision intelligence and data platform design'
   },
   {

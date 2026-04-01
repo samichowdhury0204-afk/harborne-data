@@ -47,7 +47,7 @@ export default function FounderHero() {
             >
               <div className="text-xs font-mono text-[#4A505E]/50 mb-1">FOUNDER</div>
               <div className="text-lg font-canela font-medium text-[#4A505E]">Sami Chowdhury</div>
-              <div className="text-sm font-mono text-[#4A505E]/60 mt-1">Data Scientist, UK Defence</div>
+              <div className="text-sm font-mono text-[#4A505E]/60 mt-1">Principal, Harborne Data Ltd</div>
             </motion.div>
           </motion.div>
 
