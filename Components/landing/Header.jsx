@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { Button } from '@/Components/ui/button';
 
 const navLinks = [
-  { label: 'Pipeline', id: 'services' },
-  { label: 'Results', id: 'results' },
-  { label: 'About', id: 'about' },
-  { label: 'Pricing', id: 'pricing' }
+  { label: 'What We Do', id: 'services' },
+  { label: 'About Me', id: 'results' },
+  { label: "FAQ's", id: 'faq' },
 ];
 
 export default function Header() {
@@ -14,105 +11,94 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
+    const handleScroll = () => setIsScrolled(window.scrollY > 20);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsMobileMenuOpen(false);
-    }
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    setIsMobileMenuOpen(false);
   };
 
   return (
     <>
-      <motion.header
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.5 }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full ${
-          isScrolled 
-            ? 'bg-[#E4E4DE]/95 backdrop-blur-xl border-b border-[#4A505E]/20' 
-            : 'bg-transparent'
+      {/* Urgency Banner */}
+      <div className="bg-gradient-to-r from-[#C4956A] via-[#D4A87C] to-[#C4956A] text-[#0A0D14] text-center py-2.5 px-4 text-sm font-semibold tracking-wide">
+        Limited availability — only taking <span className="font-extrabold">2 new clients</span> this quarter
+      </div>
+
+      <header
+        className={`sticky top-0 z-50 transition-all duration-500 w-full ${
+          isScrolled
+            ? 'bg-[#0A0D14]/90 backdrop-blur-2xl border-b border-[#C4956A]/10 shadow-lg shadow-black/20'
+            : 'bg-[#0A0D14] border-b border-transparent'
         }`}
       >
-        <nav className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4">
+        <nav className="max-w-6xl mx-auto px-4 sm:px-6 py-4">
           <div className="flex items-center justify-between">
-            {/* Logo */}
             <button
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-              className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+              className="flex items-center gap-2 hover:opacity-80 transition-opacity duration-300"
             >
-              <img 
-                src="/images/logo.png" 
-                alt="Harborne Data" 
-                className="h-8 sm:h-10 md:h-12 w-auto"
+              <img
+                src="/logo-rounded.png"
+                alt="Harborne Data"
+                className="h-9 sm:h-11 w-auto rounded-full ring-1 ring-white/10"
               />
             </button>
 
-            {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center gap-8">
+            {/* Desktop Nav */}
+            <div className="hidden md:flex items-center gap-10">
               {navLinks.map((link) => (
                 <button
                   key={link.id}
                   onClick={() => scrollToSection(link.id)}
-                  className="text-sm font-mono text-[#4A505E]/70 hover:text-[#4A505E] font-medium transition-colors tracking-wide"
+                  className="text-sm text-[#E5E7EB]/50 hover:text-[#D4A87C] font-medium transition-colors duration-300 tracking-wide"
                 >
                   {link.label}
                 </button>
               ))}
-              <Button
-                size="sm"
-                className="bg-[#94A378] hover:bg-[#94A378]/90 text-white rounded border border-[#94A378] font-sans font-medium"
+              <button
                 onClick={() => scrollToSection('booking')}
+                className="bg-gradient-to-r from-[#C4956A] to-[#D4A87C] hover:from-[#D4A87C] hover:to-[#C4956A] text-[#0A0D14] px-6 py-2.5 rounded-lg text-sm font-bold transition-all duration-300 shadow-md shadow-[#C4956A]/20 hover:shadow-lg hover:shadow-[#C4956A]/30"
               >
-                Book a Call
-              </Button>
+                Book a Meeting
+              </button>
             </div>
 
-            {/* Mobile Menu Button */}
+            {/* Mobile Toggle */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden p-1 text-[#4A505E]/70 hover:text-[#4A505E] transition-colors font-mono text-2xl leading-none"
+              className="md:hidden p-2 text-white/60 hover:text-[#D4A87C] transition-colors duration-300 text-2xl leading-none"
             >
-              {isMobileMenuOpen ? '×' : '☰'}
+              {isMobileMenuOpen ? '\u00D7' : '\u2630'}
             </button>
           </div>
         </nav>
-      </motion.header>
+      </header>
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -20 }}
-          className="fixed inset-0 z-40 bg-[#E4E4DE] md:hidden pt-16 sm:pt-20"
-        >
-          <div className="flex flex-col items-center gap-6 p-6">
+        <div className="fixed inset-0 z-40 bg-[#0A0D14]/98 backdrop-blur-xl md:hidden pt-28">
+          <div className="flex flex-col items-center gap-8 p-6">
             {navLinks.map((link) => (
               <button
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
-                className="text-base sm:text-lg font-mono text-[#4A505E]/70 hover:text-[#4A505E] transition-colors tracking-wide"
+                className="text-lg text-[#E5E7EB]/60 hover:text-[#D4A87C] transition-colors duration-300 font-medium"
               >
                 {link.label}
               </button>
             ))}
-            <Button
-              size="lg"
-              className="bg-[#94A378] hover:bg-[#94A378]/90 text-white rounded border border-[#94A378] font-sans w-full max-w-xs"
+            <button
               onClick={() => scrollToSection('booking')}
+              className="bg-gradient-to-r from-[#C4956A] to-[#D4A87C] text-[#0A0D14] px-8 py-3.5 rounded-lg text-base font-bold transition-all duration-300 w-full max-w-xs shadow-lg shadow-[#C4956A]/20"
             >
-              Book a Call
-            </Button>
+              Book a Meeting
+            </button>
           </div>
-        </motion.div>
+        </div>
       )}
     </>
   );
