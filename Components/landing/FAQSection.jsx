@@ -2,24 +2,24 @@ import React, { useState } from 'react';
 
 const faqs = [
   {
-    q: 'How long does it take to build a database?',
-    a: 'Typically 2-4 weeks from kickoff to delivery of a fully enriched, verified database. Timeline depends on the scope — number of data sources, target regions, and classification complexity.',
-  },
-  {
-    q: 'What kind of data accuracy can I expect?',
-    a: 'We guarantee 95%+ email accuracy through multi-layer verification. Every contact goes through waterfall enrichment, AI-powered role classification, and deliverability testing before it reaches your system.',
-  },
-  {
-    q: 'Do I need to be involved in the process?',
-    a: 'Minimal involvement required. We need one kickoff call to understand your ICP, target institutions, and goals. After that, we handle everything — data sourcing, enrichment, verification, and delivery.',
-  },
-  {
     q: 'How does pricing work?',
-    a: 'Pricing is scoped during a discovery call based on three factors: data scope, classification complexity, and dashboard/integration requirements. Every engagement is a custom retainer — no cookie-cutter packages.',
+    a: "It's mostly commission-based. There's a small monthly fee that covers the hard costs of running your campaign — data sourcing, sending infrastructure, email tooling. That's not profit, it's cost recovery so I don't run campaigns at a loss. The real money is on the back end: a small percentage of the first year of orders that come from buyers I introduce. If those orders never land, you've only paid the cost-recovery fee.",
   },
   {
-    q: 'What about GDPR and data compliance?',
-    a: 'All operations are fully GDPR compliant. We use legitimate interest-based processing, maintain proper consent mechanisms, and provide full audit trails. No purchased lists, no scraping, no shortcuts.',
+    q: 'How quickly will I see results?',
+    a: 'Outbound usually starts producing first replies within 2–3 weeks of launch. First RFQs typically follow within 4–6 weeks. First orders depend on your sales cycle.',
+  },
+  {
+    q: 'Do I need to do anything?',
+    a: "Not really. You'll review the email copy before anything goes out, then take over conversations when buyers are ready to quote. Everything in between, I handle.",
+  },
+  {
+    q: 'What sectors do you work with?',
+    a: 'UK precision engineering subcontract shops — CNC machining, fabrication, sheet metal, treatment & coating, and toolmaking. I target wherever your shop already has a foot in the door — aerospace, defence, automotive, medical, oil & gas, marine, rail, construction, renewables, food & pharma, and more.',
+  },
+  {
+    q: 'What about GDPR?',
+    a: 'Fully compliant. All outreach uses legitimate interest under UK GDPR for B2B contacts at registered businesses, with clear opt-out on every email.',
   },
 ];
 

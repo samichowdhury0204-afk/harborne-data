@@ -19,7 +19,7 @@ export default function Footer() {
               className="h-10 sm:h-12 w-auto rounded-full ring-1 ring-white/[0.06]"
             />
             <p className="text-xs text-[#E5E7EB]/25 tracking-wide">
-              Data Intelligence for Education
+              Outbound Growth for UK Precision Engineering
             </p>
           </div>
 

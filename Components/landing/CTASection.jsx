@@ -19,10 +19,10 @@ export default function CTASection() {
         {/* Headline */}
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-5 tracking-tight">
-            Ready to Build Your Intelligence System?
+            Got open machine hours?
           </h2>
           <p className="text-lg text-[#E5E7EB]/40 max-w-xl mx-auto leading-relaxed">
-            Book a 30-minute call to discuss your data requirements. No obligation, no sales pressure — just a focused conversation about your goals.
+            Book a 15-minute call. I'll tell you straight whether outbound is a fit for your shop. No pressure, no pitch deck.
           </p>
         </div>
 

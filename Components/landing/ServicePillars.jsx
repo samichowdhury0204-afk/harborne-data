@@ -7,14 +7,14 @@ const pillars = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" />
       </svg>
     ),
-    title: 'Database Builds',
-    subtitle: 'Your market and prospects all in one spreadsheet',
-    description: 'Multi-source data ingestion, deduplication, waterfall enrichment, and AI-powered classification. From raw data sources to a structured, verified database of decision-makers.',
+    title: 'Buyer Discovery',
+    subtitle: 'I find the buyers actively looking for what your shop makes',
+    description: 'I research and build a verified list of OEM and tier-1 procurement contacts in the sectors your shop is already set up to supply. Real decision-makers, not gatekeepers.',
     bullets: [
-      '15+ data sources ingested',
-      'AI role classification & lead scoring',
-      'Verified emails with 95%+ accuracy',
-      'Custom dashboard & monthly updates',
+      'Verified procurement contacts at OEMs and tier-1s',
+      'Sector-matched to your capabilities',
+      'GDPR-compliant sourcing',
+      'Refreshed every campaign',
     ],
   },
   {
@@ -23,14 +23,13 @@ const pillars = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
       </svg>
     ),
-    title: 'Lead Generation Campaigns',
-    subtitle: 'Then we handle systematic outreach',
-    description: 'Domain setup, deliverability configuration, multi-variant copy testing, and smart-cadenced campaigns. We run the outreach so you can focus on conversations.',
+    title: 'Outbound Campaigns',
+    subtitle: 'I run the outreach in your shop\'s name',
+    description: 'Domain setup, deliverability, sequence copy, and inbox management. I handle the full outbound motion and only forward you qualified replies — never tyre-kickers, never spam.',
     bullets: [
       'SPF/DKIM/DMARC configured domains',
-      'Multi-mailbox rotation & warm-up',
-      'Hypothesis-driven copy testing',
-      'Only qualified replies forwarded',
+      'Founder-style copy, not marketing fluff',
+      'Only qualified replies forwarded to you',
     ],
   },
   {
@@ -39,14 +38,14 @@ const pillars = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
       </svg>
     ),
-    title: 'Ongoing Maintenance',
-    subtitle: 'We keep your intelligence live 24/7',
-    description: 'Change detection, email re-verification, database updates, and structured reporting. Your data stays current without you lifting a finger.',
+    title: 'Quote Handover',
+    subtitle: 'When a buyer\'s ready to RFQ, I hand them straight to you',
+    description: 'You take over the quote conversation — the part you\'re already great at. I stay out of the way unless you need me. The bulk of what I earn only kicks in when an order is accepted.',
     bullets: [
-      'Monthly change detection',
-      'Email re-verification cycles',
-      'GDPR compliant operations',
-      'Bi-weekly performance reports',
+      'Warm handover, no awkward intros',
+      'You own the customer relationship',
+      'Mostly commission — I win when you win',
+      'Small monthly fee covers data and tooling costs only',
     ],
   },
 ];
@@ -65,7 +64,7 @@ export default function ServicePillars() {
             Three Pillars of Growth
           </h2>
           <p className="text-lg text-[#E5E7EB]/40 max-w-2xl mx-auto leading-relaxed">
-            From raw data to qualified conversations — we handle the entire pipeline so you can focus on building relationships.
+            From buyer discovery to RFQ handover — I handle the outbound so you can stay on the shop floor.
           </p>
         </div>
 

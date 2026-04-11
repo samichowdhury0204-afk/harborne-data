@@ -23,12 +23,12 @@ export default function ResultsSection() {
         </div>
 
         <p className="text-lg md:text-xl text-[#E5E7EB]/55 leading-relaxed max-w-2xl mx-auto mb-10">
-          Background in high-security data science. I source data and launch campaigns that deliver exceptional business value. If I can't do a job well, I say no.
+          Background in data engineering and outbound systems. I work with a small number of UK precision engineering shops at a time so each one gets proper attention. The bulk of what I earn is on the back end, when orders land. If I don't think your shop is the right fit for outbound, I'll tell you on the call.
         </p>
 
         <div className="inline-block border border-white/[0.06] rounded-xl px-8 py-4 bg-[#0E1219]/60">
           <p className="text-base text-[#D4A87C]/80 font-medium tracking-wide">
-            Trusted by multi-million £ industry leaders.
+            Working with UK precision shops and manufacturing firms.
           </p>
         </div>
       </div>

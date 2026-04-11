@@ -162,7 +162,7 @@ export default function ProblemSection() {
             transition={{ duration: 1.2, delay: 0.6 }}
             className="text-sm font-sans text-[#E4E4DE]/60"
           >
-            A system that manages data sourcing, enrichment, deliverability, and sequencing—so you focus on qualified conversations, not campaign troubleshooting.
+            Commission-based outbound for UK precision engineering shops.
           </motion.p>
         </motion.div>
       </div>

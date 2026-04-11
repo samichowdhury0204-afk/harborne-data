@@ -1,9 +1,9 @@
 import React from 'react';
 
 const stats = [
-  { value: '10,000+', label: 'Verified Contacts Per Build' },
-  { value: '95%+', label: 'Email Accuracy Rate' },
-  { value: '4-8x', label: 'Typical ROI Improvement' },
+  { value: '1,500+', label: 'UK Precision Shops Targeted' },
+  { value: '8+', label: 'Sectors Covered' },
+  { value: 'Cost-recovery only', label: 'Upfront Risk' },
 ];
 
 export default function HeroSection() {
@@ -18,18 +18,18 @@ export default function HeroSection() {
         {/* Badge */}
         <div className="inline-flex items-center gap-2.5 bg-[#C4956A]/[0.08] border border-[#C4956A]/20 rounded-full px-5 py-2 mb-10">
           <span className="w-1.5 h-1.5 rounded-full bg-[#D4A87C]" />
-          <span className="text-sm text-[#D4A87C] font-medium tracking-wide">Data Intelligence for Education</span>
+          <span className="text-sm text-[#D4A87C] font-medium tracking-wide">Outbound Growth for UK Precision Engineering</span>
         </div>
 
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.08] mb-8">
-          <span className="text-white">Your #1 </span>
-          <span className="bg-gradient-to-r from-[#C4956A] via-[#D4A87C] to-[#C4956A] bg-clip-text text-transparent">Data Partner</span>
+          <span className="text-white">The UK's Best </span>
+          <span className="bg-gradient-to-r from-[#C4956A] via-[#D4A87C] to-[#C4956A] bg-clip-text text-transparent">Growth Partner</span>
           <br />
-          <span className="text-white">for Educational Services Growth</span>
+          <span className="text-white">For Precision Engineering Shops.</span>
         </h1>
 
         <p className="text-lg md:text-xl text-[#E5E7EB]/50 max-w-2xl mx-auto mb-12 leading-relaxed">
-          We build end-to-end data intelligence platforms — from raw source data to enriched, verified, outreach-ready databases.
+          Mostly commission-based outbound. I bring your shop extra orders direct from OEM and tier-1 buyers — whichever sectors you already serve. The bulk of my fee only lands when an order does.
         </p>
 
         <button
