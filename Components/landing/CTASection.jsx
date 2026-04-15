@@ -22,7 +22,7 @@ export default function CTASection() {
             Got open machine hours?
           </h2>
           <p className="text-lg text-[#E5E7EB]/40 max-w-xl mx-auto leading-relaxed">
-            Book a 15-minute call. I'll tell you straight whether outbound is a fit for your shop. No pressure, no pitch deck.
+            Book a 30 minute call. I'll tell you straight whether outbound is a fit for your shop. No pressure, no pitch deck.
           </p>
         </div>
 

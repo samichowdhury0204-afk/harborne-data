@@ -2,13 +2,13 @@ import React from 'react';
 
 const engagements = [
   {
-    status: 'Ongoing',
+    status: 'Live',
     title: 'International Manufacturer',
     description: 'Building market segmentation and outbound infrastructure for one of the largest manufacturers serving global brands.',
   },
   {
     status: 'Live',
-    title: 'Facilities Management Group',
+    title: 'Facilities Operation Group',
     description: 'Building a prospect and market database to support their UK growth pipeline.',
   },
 ];
@@ -24,11 +24,8 @@ export default function WorkInProgressSection() {
         <div className="text-center mb-16">
           <p className="text-sm text-[#D4A87C] font-semibold tracking-widest uppercase mb-4">Currently Working With</p>
           <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4 tracking-tight">
-            Work in Progress
+            Client Work as of April 2026
           </h2>
-          <p className="text-base text-[#E5E7EB]/40 max-w-xl mx-auto leading-relaxed">
-            Live engagements as of April 2026
-          </p>
         </div>
 
         {/* Cards */}

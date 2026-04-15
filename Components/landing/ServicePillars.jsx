@@ -9,10 +9,10 @@ const pillars = [
     ),
     title: 'Buyer Discovery',
     subtitle: 'I find the buyers actively looking for what your shop makes',
-    description: 'I research and build a verified list of OEM and tier-1 procurement contacts in the sectors your shop is already set up to supply. Real decision-makers, not gatekeepers.',
+    description: 'I research and build a verified list of procurement contacts at the buyers your shop should be reaching - whether that\'s OEMs, tier-1s, tier-2 manufacturers, or direct industrial end-users. Real decision-makers, not gatekeepers.',
     bullets: [
-      'Verified procurement contacts at OEMs and tier-1s',
-      'Sector-matched to your capabilities',
+      'Verified procurement contacts',
+      'OEMs, tier-1s, tier-2s, end-users',
       'GDPR-compliant sourcing',
       'Refreshed every campaign',
     ],
@@ -25,7 +25,7 @@ const pillars = [
     ),
     title: 'Outbound Campaigns',
     subtitle: 'I run the outreach in your shop\'s name',
-    description: 'Domain setup, deliverability, sequence copy, and inbox management. I handle the full outbound motion and only forward you qualified replies — never tyre-kickers, never spam.',
+    description: 'I handle the full outbound motion and forward you qualified prospects to quote. Via Emails, Calls and Linkedin',
     bullets: [
       'SPF/DKIM/DMARC configured domains',
       'Founder-style copy, not marketing fluff',
@@ -40,7 +40,7 @@ const pillars = [
     ),
     title: 'Quote Handover',
     subtitle: 'When a buyer\'s ready to RFQ, I hand them straight to you',
-    description: 'You take over the quote conversation — the part you\'re already great at. I stay out of the way unless you need me. The bulk of what I earn only kicks in when an order is accepted.',
+    description: 'What I earn only kicks in when an order is placed.',
     bullets: [
       'Warm handover, no awkward intros',
       'You own the customer relationship',

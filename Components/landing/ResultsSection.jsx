@@ -23,7 +23,7 @@ export default function ResultsSection() {
         </div>
 
         <p className="text-lg md:text-xl text-[#E5E7EB]/55 leading-relaxed max-w-2xl mx-auto mb-10">
-          Background in data engineering and outbound systems. I work with a small number of UK precision engineering shops at a time so each one gets proper attention. The bulk of what I earn is on the back end, when orders land. If I don't think your shop is the right fit for outbound, I'll tell you on the call.
+          Background in high security data engineering and outbound systems. I work with a small number of UK precision engineering shops at a time so each one gets proper attention. The bulk of what I earn is on the back end, when orders land. If I don't think your shop is the right fit for outbound, I'll tell you on the call.
         </p>
 
         <div className="inline-block border border-white/[0.06] rounded-xl px-8 py-4 bg-[#0E1219]/60">

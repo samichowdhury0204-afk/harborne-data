@@ -2,7 +2,7 @@ import React from 'react';
 
 const stats = [
   { value: '1,500+', label: 'UK Precision Shops Targeted' },
-  { value: '8+', label: 'Sectors Covered' },
+  { value: '8 Sectors', label: 'Aerospace, defence, medical, automotive, motorsport, oil & gas, marine, rail' },
   { value: 'Cost-recovery only', label: 'Upfront Risk' },
 ];
 
@@ -22,14 +22,13 @@ export default function HeroSection() {
         </div>
 
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.08] mb-8">
-          <span className="text-white">The UK's Best </span>
-          <span className="bg-gradient-to-r from-[#C4956A] via-[#D4A87C] to-[#C4956A] bg-clip-text text-transparent">Growth Partner</span>
+          <span className="bg-gradient-to-r from-[#C4956A] via-[#D4A87C] to-[#C4956A] bg-clip-text text-transparent">Fill your unused CNC capacity</span>
           <br />
-          <span className="text-white">For Precision Engineering Shops.</span>
+          <span className="text-white">with consistent new RFQs</span>
         </h1>
 
         <p className="text-lg md:text-xl text-[#E5E7EB]/50 max-w-2xl mx-auto mb-12 leading-relaxed">
-          Mostly commission-based outbound. I bring your shop extra orders direct from OEM and tier-1 buyers — whichever sectors you already serve. The bulk of my fee only lands when an order does.
+          Mostly commission-based outbound. I put your shop's capacity in front of procurement teams you haven't reached before. We only get paid when you get paid.
         </p>
 
         <button
