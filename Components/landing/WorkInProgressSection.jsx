@@ -24,7 +24,7 @@ export default function WorkInProgressSection() {
         <div className="text-center mb-16">
           <p className="text-sm text-[#D4A87C] font-semibold tracking-widest uppercase mb-4">Currently Working With</p>
           <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4 tracking-tight">
-            Client Work as of April 2026
+            Client Work as of May 2026
           </h2>
         </div>
 
