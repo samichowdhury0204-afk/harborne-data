@@ -96,7 +96,7 @@ export default function FounderManifestoSection() {
               transition={{ duration: 1.1, delay: 0.5 }}
               className="text-base font-sans text-[#4A505E]/70 leading-relaxed"
             >
-              I spent nearly 3 years engineering automated systems for UK defence—pipeline analytics, decision intelligence, data infrastructure at scale. Harborne Data applies that same engineering discipline to B2B outreach: systematic, measurable, reliable.
+              I spent nearly 3 years engineering automated systems at scale—pipeline analytics, decision intelligence, data infrastructure. Harborne Data applies that same engineering discipline to B2B outreach: systematic, measurable, reliable.
             </motion.p>
           </motion.div>
 

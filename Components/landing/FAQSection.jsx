@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     q: 'What sectors do you work with?',
-    a: 'UK precision engineering subcontract shops — CNC machining, fabrication, sheet metal, treatment & coating, and toolmaking. I target wherever your shop already has a foot in the door — aerospace, defence, automotive, medical, oil & gas, marine, rail, construction, renewables, food & pharma, and more.',
+    a: 'UK precision engineering subcontract shops — CNC machining, fabrication, sheet metal, treatment & coating, and toolmaking. I target wherever your shop already has a foot in the door — aerospace, automotive, medical, oil & gas, marine, rail, construction, renewables, food & pharma, and more.',
   },
   {
     q: 'What about GDPR?',

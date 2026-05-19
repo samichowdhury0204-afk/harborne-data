@@ -75,8 +75,7 @@ Frequencies are mentions across the ~85 readable sites — many sites serve mult
 | Rank | Industry | ~mentions |
 |------|---|---|
 | 1 | Aerospace | 28 |
-| 2 | Defence / military | 18 |
-| 3 | Automotive (incl. motorsport) | 17 |
+| 2 | Automotive (incl. motorsport) | 17 |
 | 4 | Construction / structural / architectural | 16 |
 | 5 | Medical / healthcare devices | 14 |
 | 6 | Oil & gas / petrochemical | 13 |
@@ -85,7 +84,7 @@ Frequencies are mentions across the ~85 readable sites — many sites serve mult
 | 9 | Nuclear / power generation | 9 |
 | 10 | Food, drink & pharma processing | 9 |
 
-Honourable mentions: renewables/wind, agriculture/equestrian, mining/quarrying, scientific instruments, semiconductors, dental labs, security/fencing, hydraulics. Aerospace and defence are the prestige verticals — they appear *anywhere they can be claimed*, even when the site is otherwise small. That's a tell: claiming aerospace work is the #1 status move in this niche, and the firms that *don't* claim it are usually doing higher-volume commodity work.
+Honourable mentions: renewables/wind, agriculture/equestrian, mining/quarrying, scientific instruments, semiconductors, dental labs, security/fencing, hydraulics. Aerospace is the prestige vertical — it appears *anywhere it can be claimed*, even when the site is otherwise small. That's a tell: claiming aerospace work is the #1 status move in this niche, and the firms that *don't* claim it are usually doing higher-volume commodity work.
 
 ---
 
@@ -96,10 +95,10 @@ Honourable mentions: renewables/wind, agriculture/equestrian, mining/quarrying, 
 | 1 | ISO 9001 (any version) | 26 | Table-stakes. If a T2 site doesn't show it, that's a real differentiator gap |
 | 2 | AS9100 (D / Rev D) | 8 | The aerospace gate. Sites showing this charge more |
 | 3 | NADCAP | 5 | Only the serious aerospace shops |
-| 4 | Cyber Essentials / Plus | 6 | Increasingly required for MoD work |
+
 | 5 | ISO 14001 | 6 | Environmental — comes paired with 9001 |
 | 6 | ISO 45001 / OHSAS | 5 | Health & safety |
-| 7 | JOSCAR | 3 | Defence supplier register |
+
 | 8 | UKAS-accredited (umbrella) | 5 | Often calibration / quality |
 | 9 | Made in Britain | 4 | Marketing badge, not a quality cert, but proudly worn |
 | 10 | NACE / ICorr / Achilles / FPAL / NORSOK | 6 combined | Oil & gas / coatings stack — only the protective coatings firms |
@@ -123,7 +122,7 @@ Of the ~85 sites I could read:
 (Of the ~25 sites that errored or returned only platform shell, several would render fine in a real browser — but if I can't read them via WebFetch, neither can Google. Treat unreadable as a *real* problem, not a measurement artifact.)
 
 ### Tier 1 examples (3)
-- **gwmartin.co.uk** — Eastleigh, family-run since 1959. Hero "Precision meets sustainability". Certs: ISO 9001, ISO 14001, JOSCAR, Cyber Essentials Plus, Make UK Defence, ADS membership. Specific numbers ("1,000,000+ components made each year"). This is the gold standard.
+- **gwmartin.co.uk** — Eastleigh, family-run since 1959. Hero "Precision meets sustainability". Certs: ISO 9001, ISO 14001. Specific numbers ("1,000,000+ components made each year"). This is the gold standard.
 - **dpengineeringltd.co.uk** — Truro, since 1952. Hero "FOR ALL YOUR PRECISION ENGINEERING NEEDS". AS9100, ISO 9001, Cyber Essentials. Aerospace positioning, clean modern build.
 - **corrocoat.com** — anti-corrosion coatings since 1974. ISO 9001, ISO 45001, FPAL, Achilles, NORSOK, AMPP, Network Rail, ICorr — eight cert badges. Marine/oil&gas/power/water sectors all listed. Active updates.
 
@@ -143,12 +142,12 @@ Of the ~85 sites I could read:
 
 A Tier 1 UK precision engineering site almost always has these elements, in roughly this order:
 
-1. **A specific hero, not a generic one.** Not "Precision Engineering Solutions" — but "Aerospace Fine Limit Sheet Metalwork" or "Pendulum Roller Mill Experts" or "Component Manufacturer — High Precision: aerospace, defence, hydraulic and gas". A vertical or a process, named explicitly.
+1. **A specific hero, not a generic one.** Not "Precision Engineering Solutions" — but "Aerospace Fine Limit Sheet Metalwork" or "Pendulum Roller Mill Experts" or "Component Manufacturer — High Precision: aerospace, hydraulic and gas". A vertical or a process, named explicitly.
 2. **A heritage line.** "Family-run since 1959" / "Third generation" / "Established 1974". This appears within the first viewport on ~80% of T1 sites. It is the dominant trust signal in this segment.
 3. **Concrete proof numbers.** Sq ft, machine count, axes, components per year, max part dimensions, materials handled. T1 sites quote at least one. T2 sites quote zero.
 4. **A capability matrix or services grid.** Usually 6–9 tiles: CNC milling, CNC turning, fabrication, welding, CMM inspection, finishing, assembly, etc. Often above the fold.
 5. **Cert badges on the homepage**, not buried. ISO 9001 minimum; AS9100 / NADCAP / Cyber Essentials if they have them. Logos rather than text.
-6. **Named industries served (the "Sectors" page).** A list of 4–8 verticals. Aerospace and defence top the list whenever truthfully claimable.
+6. **Named industries served (the "Sectors" page).** A list of 4–8 verticals. Aerospace tops the list whenever truthfully claimable.
 7. **Case studies or named clients** (rolled out as logo strips: BAE Systems, JLR, Rolls-Royce, Tarmac, Anglian Water, Mercedes AMG…).
 8. **A contact form, not just a phone number** + visible UK postcode.
 9. **An "About / Why us" page** with a photo of the workshop or the team.
@@ -244,7 +243,7 @@ Your value prop, written in their language:
 > # Extra orders for UK precision shops.
 > ## Commission-only outbound. We bring you contract work; you only pay when an order lands.
 >
-> **Who we work with:** UK CNC machining, fabrication, sheet metal, treatment & coating, and toolmaking shops — the small and mid-size firms doing aerospace, defence, automotive, medical, and oil & gas work. Family-run, owner-operated, ISO 9001-certified shops with open capacity and no time to chase new buyers.
+> **Who we work with:** UK CNC machining, fabrication, sheet metal, treatment & coating, and toolmaking shops — the small and mid-size firms doing aerospace, automotive, medical, and oil & gas work. Family-run, owner-operated, ISO 9001-certified shops with open capacity and no time to chase new buyers.
 
 **Why this wording:**
 - "Extra orders" beats "lead generation" by a mile in this segment. They don't need leads, they need orders.
@@ -255,7 +254,7 @@ Your value prop, written in their language:
 
 **Optional sub-block — "How it works" (3 steps):**
 > 1. **You tell us your kit and capacity.** What you can make, what materials you handle, what's free this quarter.
-> 2. **We find buyers.** Direct outbound to OEMs and tier-1s — aerospace, automotive, medical, defence. We hand over the conversation when they're ready to RFQ.
+> 2. **We find buyers.** Direct outbound to OEMs and tier-1s — aerospace, automotive, medical. We hand over the conversation when they're ready to RFQ.
 > 3. **You pay only when an order is accepted.** A small commission on the first invoice. No retainer, no setup fee, no contract.
 
 ---

@@ -2,7 +2,7 @@ import React from 'react';
 
 const stats = [
   { value: '1,500+', label: 'UK Precision Shops Targeted' },
-  { value: '8 Sectors', label: 'Aerospace, defence, medical, automotive, motorsport, oil & gas, marine, rail' },
+  { value: '7 Sectors', label: 'Aerospace, medical, automotive, motorsport, oil & gas, marine, rail' },
   { value: 'Cost-recovery only', label: 'Upfront Risk' },
 ];
 

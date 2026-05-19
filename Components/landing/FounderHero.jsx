@@ -104,8 +104,8 @@ export default function FounderHero() {
                 className="space-y-3 mb-8"
               >
                 {[
-                  'Nearly 3 years: data scientist in UK defence sector',
-                  'Built automated pipeline systems for government analytics and decision intelligence',
+                  '3+ years: data scientist and engineer',
+                  'Built automated pipeline systems for large-scale analytics and decision intelligence',
                   'Multi-source data engineering, enrichment, and verification at scale'
                 ].map((point, i) => (
                   <motion.div 

@@ -119,7 +119,7 @@ export default function AboutSection() {
                 transition={{ duration: 0.9, delay: 0.4 }}
                 className="text-sm md:text-base font-sans text-[#4A505E]/70 leading-relaxed"
               >
-                Nearly 3 years building automated systems and data pipelines in the UK defence sector. 
+                Nearly 3 years building automated systems and data pipelines at scale. 
                 That work meant turning raw data into actionable intelligence—ingestion, enrichment, classification, 
                 verification, and maintenance of live systems. It's the same work education institutions need for recruitment and partnerships.
               </motion.p>
@@ -143,7 +143,7 @@ export default function AboutSection() {
                 transition={{ duration: 0.9, delay: 0.6 }}
                 className="text-sm md:text-base font-sans text-[#4A505E]/70 leading-relaxed"
               >
-                This is founder-led. I apply the same engineering discipline to your intelligence systems that I applied to defence analytics: 
+                This is founder-led. I apply rigorous engineering discipline to your intelligence systems: 
                 automation, optimization, and unflinching attention to data quality.
               </motion.p>
             </div>
