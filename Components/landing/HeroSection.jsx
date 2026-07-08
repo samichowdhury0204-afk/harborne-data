@@ -27,9 +27,14 @@ export default function HeroSection() {
           <span className="text-white">with consistent new RFQs</span>
         </h1>
 
-        <p className="text-lg md:text-xl text-[#E5E7EB]/50 max-w-2xl mx-auto mb-12 leading-relaxed">
+        <p className="text-lg md:text-xl text-[#E5E7EB]/50 max-w-2xl mx-auto mb-8 leading-relaxed">
           Mostly commission-based outbound. I put your shop's capacity in front of procurement teams you haven't reached before. We only get paid when you get paid.
         </p>
+
+        <div className="mx-auto mb-10 max-w-3xl rounded-full border border-[#C4956A]/20 bg-[#C4956A]/[0.06] px-4 py-2 text-sm text-[#E5E7EB]/80">
+          <span className="mr-2 text-[#D4A87C]">Proof:</span>
+          I secured a £2,700 quote within 5 days for a precision engineering client, and a further £15,000+ job within 7 days.
+        </div>
 
         <button
           onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}
